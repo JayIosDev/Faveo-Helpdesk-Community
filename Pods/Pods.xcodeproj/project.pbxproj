@@ -1,0 +1,2730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		021E3A7F38DF398A27CFD3B097FE7862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		027B4E285A75CA07624E69554D9A8E48 /* RMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5635389A48E3806F7A1463874613B66B /* RMessage.xib */; };
+		02D3EB6BEB352DD3EC497F7025957A8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662289747018C938AEDC08266938C77 /* QuartzCore.framework */; };
+		0386CD90DAA1FCB7CA61CE9065A3F235 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F7FE592EC82557280DADC64EAEC843 /* SwiftHEXColors.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		04DC3AB008D664C94B53378D92A8357C /* ActionSheetDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 906787D069389D87DF9A8EBE7EF4A460 /* ActionSheetDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A2F2DB32720E7F97CEFB383ACD3C183 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C08696D1C3BEC24C385BF021932F4901 /* SVProgressAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0B58249E18BC6B5059BA58BF1F41ACB8 /* ActionSheetLocalePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F28D4D19A68F242B9915E5BB3DAE88 /* ActionSheetLocalePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BF96C90FD9427084AEEE5A80777D315 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C903F9921DD9D876DF8D1FA2CD6CB7A /* ParameterEncoding.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0DEE8FE78BFA6837741490D5AE7E70D3 /* ActionSheetCustomPickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3650CA0DE531143603046056B10055 /* ActionSheetCustomPickerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F8A4C909754685BE38C1634A57E1638 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		10788B191688E17CB273945B5BEB513D /* RMPresenterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BDAA5C3B27CBA2E002AB53152715CE /* RMPresenterOptions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		10D4EFE38FFFE3C7F222D35B62E728ED /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 15527DB59A552FB40F6221F4FE2A84D9 /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		15B9BDF0CDB325D32A501DCB70054A9F /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B14F9943E7F1B47571BCD07346295E /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B13116E2E4A02F846F36B5737AFD235 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 529ED553EA4CE2F8843299D6CEA54AF5 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23F6887B63EA58E47332FAAA6B92A6FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		2440D460B9156892F3D0624F0DCA7A48 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CA83692B5AF74DF2FF6C3422452B88 /* SVRadialGradientLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		253308756716C88DC7EDA1743056F2C8 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E01CA1EE6D142F24FFE916CBC6A1548B /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2727336FAB0519AC37BF00B315B758D7 /* UIView+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC0E91069F1D4B1C21BFA1104FC2A5 /* UIView+JJFloatingActionButton.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		275AFFAECF5AC6104BFA94938935F411 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090119EB3F5E9D9392AF2E56489FDA05 /* SwiftyJSON.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		283C2DC1C4AAED94E46374CD32F8EFFB /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC02BD6A0D7E5C93E1AE1D25190614 /* IQKeyboardManagerConstantsInternal.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2A42A2EBBEC263B1444869F14260A58F /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A2A8F33B43A746611E41C1C05453BA /* IQUIView+IQKeyboardToolbar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2BD326F548913D0EF8DDA289321E4AE5 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 62591017FDE823216F81BC498912A271 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D6FFBC4C75FFBB8A4B2B15C1075D612 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79361F1508CB74827B49358F33E56FDF /* IQBarButtonItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2DA0045270F2FE8718E7366D1CFC01B2 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 987633D7A3A85C389CD4BB36DAB21683 /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		31E097613F217BBF4E774D235917E165 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C510C24A585EA706E39FC63FDE1D363 /* TaskDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		33FF9B2BEC508A588DCB31462B7306A0 /* ActionSheetMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AC181D137AD65B3F6A03EF74EA19CB /* ActionSheetMultipleStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		39E46DB3A3EA5EB4427CC89A9FBE6127 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC00A4886D29884D0CEC3539C7B72F /* DispatchQueue+Alamofire.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3A4526C43352F97623992ABC6D4E7450 /* HexColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D9446B05354FBC8E08FC4FCF292606 /* HexColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A93D137EB62F001CBC275BD8B19CD51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E705F69505365607A4D95857CB483F92 /* CoreGraphics.framework */; };
+		3C79EA46B35175AE97ADF4E5E026F325 /* Pods-Faveo Helpdesk Community-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B6E04C1E14A1309F0A996D6F2F91F1 /* Pods-Faveo Helpdesk Community-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		403C5D9AAD792C6FAFFE3961911E5162 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = BA80309000ABD6CD715B42CD273382F4 /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		40E83A2C4472A974BA66E787E66ACB40 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7AA21AD8AAC565BD6CCAA6EE1984A /* MultipartFormData.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		410F5CD1CECF649AFEBB511577273D81 /* JJFloatingActionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA07E143F0B7BAB8BCC46AADC71A471 /* JJFloatingActionButtonState.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		42F884AF42CD068C62204A85BA32B50B /* Delegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000340367513A020F06D9BFC5C536A55 /* Delegate+DataSource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4512E733A416EDBBC16D47AA78EE283A /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C22D79784E38811D3E7C422FADD0A4 /* IQTitleBarButtonItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		49EB6183F25DAA5F9DD62AEC0A7EAF8B /* RMPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF817FB102B5B51E875B22B30EA53B /* RMPresenterDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4AA963A5D72B8238FDBE10B32CE7BA49 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EA634BB4BBFEC9C1843AD92971302F /* NibView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4D1790DE32542049195AD0735144B510 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1017BEF97BF5FE26683DF57A69316EF8 /* IQToolbar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4D4A61EC172DB39FCF11C0829DF6913C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71218886A810DAD5CA873B1D09BAF40 /* ServerTrustPolicy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		52B7A0E751A7EF2D1B065EB4A0EA942A /* RMShowOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588D8C98F249BF17B254CD91978EB75 /* RMShowOperation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		54A60EB6A335BE15B2EF2CB8EDCE1FD9 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA329D54E3E5BDDF566D0917CEF923B /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C3BC6799CD246C7B5C13034DAB359C7 /* CountryPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5063AA1742EB22D0E1DF56ADBC3A1B58 /* CountryPickerView.bundle */; };
+		5F3A5E7DE89A7A42FBB40504F18D50FA /* JJActionItemTitlePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5018206CAEA055EC275E9FA7FAF1718A /* JJActionItemTitlePosition.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5F98DA55C2B6E424A64D29EA61A76443 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B772DE2F17AE3C01FFA67A912B3AA9FB /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5FAE6243000CCAF381D57109484B1396 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC94F66A4675EFD69F0BF860A542C01 /* SessionDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		60AC14B5788F6246B77EF7B4F23ED72E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662289747018C938AEDC08266938C77 /* QuartzCore.framework */; };
+		62E3677D73196864E55225865619A14E /* JJFloatingActionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD9CD981141575027F13FE279F3F8B9 /* JJFloatingActionButton-dummy.m */; };
+		63D346D095CC123BEF67C763C48261EE /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE541C190FE1FC01938156283D553969 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64DF89CDC3CD38DBABC333570D0D4B24 /* RMessage+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9EE21F0301B6A899B05D05101BE9 /* RMessage+Components.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6574CF2D0F4E36A96235F97FF4022009 /* RMessage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65B77D2002C25C54D9B7DDB3CFDF8C /* RMessage-dummy.m */; };
+		662C6BD811016FFE039C9E0A9276770A /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64583F9C8C9D8B366CA1C7F4149619 /* IQKeyboardManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		66777B3D392D4AF8CBAE17A9C5D13C2F /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F32BAD07B4F747C64F8D33D6FBA06FE /* Timeline.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6BC552C40935F9164B0565799E276A70 /* ActionSheetDistancePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D0C0C7D8B987F923274D85D2101D5B /* ActionSheetDistancePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DE8C977E77B7A9F692376E009B82254 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD878A2E8BEAA37BDA9977D40B34B26 /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6E234A862ED158238D3CB582143270EF /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D3B6A03023BC6ED857DDC29D172EEC /* Alamofire.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		70052EBBCE4D6B524FD4558E1C2E1696 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD1401A220A26BAA078ABBB4A8C5606 /* SWActionSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		708A4C2927C53AD594C3140375C3ADE3 /* CountryPickerView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 93B6F1F25A5F93F75CDFBD8BE070F189 /* CountryPickerView.xib */; };
+		71C8993DD60E299326A97D5329C3CD71 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 976C6FDDBD8A65853005BCEED8E279D8 /* Alamofire-dummy.m */; };
+		727E069CF7C9978AFF78B0DE44E95743 /* RMPresenter+TouchCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480594B480F3B281E9E717F0DEB02E0 /* RMPresenter+TouchCompletion.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		72EDF21BFA7D0C52E40EAB4354F8AF44 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A07E5A7D636849C0DDAA007237F47AB /* Response.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		747B4DDAE8233BAB2D08007FF8291F3E /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D311480C6460869393F8D5BE96B0E59 /* IQInvocation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		79B9BAB96C38BDC5AED02BA1FCFADCB5 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C133ABB0478A898D1C9EF94124D4AC0 /* IQPreviousNextView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7CA03C2740281AEB78A095DCF2DEE1DB /* JJFloatingActionButton+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AD8DB68E7CE8CD6E79FD831DEE26E1 /* JJFloatingActionButton+Animation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7DDEEA91D0D552EA97C246C730D78824 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E15D3C032B9D39154E8D2E6269DFAC /* AFError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7EC61770466C1FF57B5A2C82046284B7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956FCD53C0DBE938F344C1669E5CAEA /* Request.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7FC8C6A9A61C948D232DC69B86CD4571 /* HexColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D38AAC91EF78447A601061E71F4C2E /* HexColors.framework */; };
+		8080ED10057840D693568F5CBBE7F9F3 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AEFD5DE0350D5781F4737592E02E2F /* IQNSArray+Sort.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		81F48B45BB3364F85399A085D2C6EB5D /* SWActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 390E2347D72280DEBA6ACED440F1A699 /* SWActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8227B82188AB7C745489959AE6C45F63 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE74F4A8D5FCF89E0181B20FDB0F94B /* IQUIViewController+Additions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		823A6F0A7CF829BE73E3B4EEF1EB74F9 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = CB94E5E968B0D805C6D3055D62EB3B92 /* Images */; };
+		8565110EC39908F1DD099DABF5734E92 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 240CD7DA4964748F39AF91569304E399 /* IQKeyboardManager.bundle */; };
+		85BCE05AEFFFE7A420FF06BE065E9F21 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD06BCB6305FCE750545401AE59CA45 /* CountryPickerView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		89903D0475FDFAB0CEAA0B79E6CAECC6 /* HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E178A9CC263C4F763528E4443C35B /* HexColors.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8CAB6568C3018A267FBB9545865267FB /* RMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1042826DF21475FB562C8E054A7EED28 /* RMController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8E90C1069C9A6D826A6FB51706738876 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8F0A909AAF53122684758F060EF14 /* IQUIScrollView+Additions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9176849D88AF9C7F9758B7525FC9BCD0 /* RMAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E123BD69D774146FAE724CC3833AA536 /* RMAnimationOptions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		918D55F16814247D5D0D74FC75B48FBE /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087C6414C914BCBA119D8839AFC16BF /* Validation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9550E53A570B6193A84973AA6768982E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		964EAAEC44DACD268E4DAD5DA94023C9 /* LayerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB29B0FB9963570E9B0D4CB2B059E6F /* LayerProperties.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9934D7B34FFA698FE068F941DE8C2A01 /* RMessage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4114818AA074765E2A2161F9B6BDAFD /* RMessage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BC1B4CFBFBC6D3CB34A3F45CF5C306D /* RMessageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E82156E47D44127D83341E33F04BD5 /* RMessageSpec.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9E1EA37140FB4DB5589924D069E0F040 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C529FDBA631175D01C957CC9788B66 /* ActionSheetLocalePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9EAE68FA8C657F0C0FCD913997B12A04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		A1538ABA5165DF9F81129AA24924B22E /* RMPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910AD23CAC3245FD560F22EDA14C1E4 /* RMPresenter.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A1805B3522AD2C8941E19640D7AA616B /* DistancePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = B1710EF518BCFFEF44B3B2C82991025F /* DistancePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1B476A13A4252E9A25A47C457C52AD8 /* HexColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E3D6919CE4B5532986FC5C49D75A71 /* HexColors-dummy.m */; };
+		A2391C310F6639666EC628DFA18F685D /* JJCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E73200E0850DA04278FDA38D2042D /* JJCircleView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A313D3544723FFC12288BA8F1D583061 /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF27E4BB5E56DF0D799A96463F05F7D /* AnimationConfiguration.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A3CBD8A0CE4DAA31741E13C7E51E5D0B /* RMAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32CB4DC1C3039165C7FDD43E3AAE1F1 /* RMAnimator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A48BFEB19BCCA2C38583908874935521 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5DF995DEAEDC1B206138D6C145F6BD /* SwiftyJSON-dummy.m */; };
+		A60FE89C6E1AEBFB88B9DE263247981D /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2AE8882853ADE4076829E17BD8356F0 /* SVProgressHUD.bundle */; };
+		A69546F27C5AC5061C7260878C2D9820 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB40062A65697CE790FD108CDA48D5FE /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8D2738D9F62207A007481DBFAF8933D /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BF69E8CFB86E1301A3407BAB7B962 /* IQKeyboardManagerSwift-dummy.m */; };
+		AAABF23A2819E9C9AC8F0654A928CDBC /* CountryPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 570CFA103495C19778192EC43830133A /* CountryPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAEDC46EF5C58D5DBB8A366EBD885491 /* SlideAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A7673C8E7769FFB96C0CA9117349CF /* SlideAnimator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AF5D89B11CF16050E2ED64E10353C53C /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B1FF69EA679401443D54DBEC06183 /* IQUIView+Hierarchy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B0EC38A7E149464894982A3669FFAE33 /* JJFloatingActionButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF099EAC0C266F7FEE20DD7A457D0005 /* JJFloatingActionButtonDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B16DC9809DA7C9E21AD1EA3A3A6E742C /* Pods-Faveo Helpdesk Community-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C290DE9DE54E92EB7CAE715B2B8A7F0 /* Pods-Faveo Helpdesk Community-dummy.m */; };
+		B26C88C99938E375DC2ED345BFD30E5E /* RMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A367F8A667A041B81871D7684C80DE /* RMessage.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B3BDD010AF6EA9B3C193B741535F4B66 /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B18A561489850ACAB4C2EEFB08A106 /* SwiftHEXColors-dummy.m */; };
+		B4FFBAAAB2020487F48B39A18F09BABC /* ActionSheetMultipleStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB07E28AA33DF9821F35146C25FE074 /* ActionSheetMultipleStringPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B71B9C278379BF63105017C6E2ED01EB /* JJFloatingActionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDCCB60F033576A23849596B0820DB3 /* JJFloatingActionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA2656E48077A6E2B12C48B29C80728E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368E0503150E6A0519C8AB4E5F1CA214 /* UIKit.framework */; };
+		BBBF67E6CE0CEDD0B74D4CEE3EE5DDDB /* RMessage+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E695D5EEC2466158B6CAEF75B15ED3 /* RMessage+Design.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BD8C15CEC12E2C97775FCCF763C45DBF /* ActionSheetPicker-3.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2540CC432EDBC7EE7B4AAD1D38031A70 /* ActionSheetPicker-3.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE07F92BED937D19BAFD70A17F6AA498 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		BEE3F41C1AE3F63252F05C59C7E14088 /* ActionSheetStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = A1638EA6F38F92092AF9FE0A68454A44 /* ActionSheetStringPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C22092D0BCACC1EF93D912FF246DDFF3 /* UIWindow+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AC34617645B660947B2FF8F35623F /* UIWindow+ViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C27AFAB0227E6F4743B451C84FBA7BAD /* JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9309030BAE4B2C25B3FF890E6BA17CD /* JJFloatingActionButton.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C458FFE36D2D6CB35B780439C99AD19D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		CAFDEC2BE2BD6C00E8E71FED4BBFF080 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272E9F2F62BFFC083D24C7767D6A6842 /* Result.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CED142AE352A9DB175F27D2804A35863 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 073FC269E6B12441E7E89B3F6FBD93B9 /* Data */; };
+		D04270C0C61007A8BB065F92A680D6DE /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6037CCDB789F69BF794D3FE4A3CE24 /* ResponseSerialization.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D1ECED4FBA8B8C67BCC1C47D6F50C00B /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D1AF77775EC85707828F7E5E401D9CEF /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2E2217665477783FF4E56BDC193331B /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1FF2F6D80B6266782DE7A8FE1F85B /* Styles.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D3CCB1238568C695EB53ED17E05931B7 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 585CB1425CBB3D6A3DC55A291063077F /* SVProgressHUD-dummy.m */; };
+		D57EBF218A587B277DD81C4A75EDC656 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C741E8288FBFAEFDE135B78F858396 /* IQUITextFieldView+Additions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D6D007B23FA5DF1701D61350DFC40500 /* AbstractActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = DA07E6344B316D63EA15F20FBBBEFBEC /* AbstractActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D72525552EA381EFC7AC1F2617B30F12 /* ActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = E3F55EDDA9EC1BB7F055B70B7ECAB5A0 /* ActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D80520F915604ECE5AFC7C198210BD4F /* ActionSheetCustomPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A8006A3E3CD07BC1307FE98BFDD73B2 /* ActionSheetCustomPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8EC5B74B9B5DC842F4179D19E6DE6D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		D92564251F9E24490487C5DF39B0AEF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368E0503150E6A0519C8AB4E5F1CA214 /* UIKit.framework */; };
+		DA35E172CFC080BBAB284AF2790DB7F2 /* ActionSheetPicker-3.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BBE153AECE5CE70D6CFF9147AD9CAE /* ActionSheetPicker-3.0-dummy.m */; };
+		DA3B50AF86C7F0AB8AA95BC126F0D070 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E9E46B63F205BBE8BE4AA70350A48 /* SessionManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DB1DFD55BB3B9267B04BBAAB8AF17829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		DEDE5F3C4805707EC1CC0A0FE8128A08 /* UIColor+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B9F6D4BA87A59E5077BAC41EEC4B8 /* UIColor+JJFloatingActionButton.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DEDF2BD61836D98A6B6A18260F96D380 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DDD6CC9F06D964FAB714B57BCA63F2 /* SVIndefiniteAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E168E51972842469FAAD625F11D9D781 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2807684B2E91F2E00E4CDE9E2B0ABDD /* Notifications.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E281A9C37410B82821C2415639903F67 /* CountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79DA25CE3C723517A88947E221FC69 /* CountryPickerViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E518C43BF23616CF92DC794F06441D1C /* CountryPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FF9B28869ED72A41907AD76ACC9386 /* CountryPickerView-dummy.m */; };
+		E574D7CE322F8701636E3E6061D6A6DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		E640E0C60C6CD41854EDE043914A4F77 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3515FB3A9CFE73C7BC6C8633B9B8B899 /* Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E8E6DA8E6CEE5390EA835601C597C59B /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = DB8FB66B3DAA6457E1093B4BD4C16378 /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED9AC32D2C359743C5842B322BE3EB7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368E0503150E6A0519C8AB4E5F1CA214 /* UIKit.framework */; };
+		EF1461221681BCA12A4147900A704727 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7882669DF08F3CB0DDFAE87E464C2C10 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0F07CCE8B31D36352826D7586989DAF /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393FFA01DB41FE9156C47CEAC31C079B /* IQKeyboardReturnKeyHandler.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F131FE90B8E873F55FF192FF10A19076 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BC375BCDFED7BAC1D00BD8C38322F2 /* ActionSheetCustomPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F2C849A742D85678865AFB1CA22EDBAB /* JJFloatingActionButton+Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E031B2B462A7DCE770D37EA120A15F1 /* JJFloatingActionButton+Placement.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F61761312E0D741D61DC09E02BCA6DE9 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EBFF3FBB2958783DA1A563BA68E281 /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F7142D5F054A61C071BA89ED7369DCEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */; };
+		F7A960B88C70FC80EAC484066A49B48B /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66E6DD1BE2597C178334D35F6566970 /* IQTextView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F949EC06384F9010F8B9AC5E502E4BC2 /* RMControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB566834B124B998A62007EDBE443B /* RMControllerDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F9A27CECF95AB7E95D44EF96BC254B8C /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA3E17D9E1D1F0BF71E6E3F5A5E132 /* IQKeyboardManagerConstants.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD9ACD2FBE5243A91558B907BC425CF1 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDC8287758DD3BC64342AA2C94A8D2 /* NetworkReachabilityManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FE1C5F1C7E7898B9EBBF27D4D9E6B1F1 /* JJActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971E7E2B4B3AFA0188F414C30ACC006 /* JJActionItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B0163012A9180DACE00623F9D82F676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76458C58C9140B6A16D60547E68E80C;
+			remoteInfo = Alamofire;
+		};
+		2C3AB1B9F94AE1A83CF68D28CEF9CAE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3C484FBA9936499839FE340CB064888;
+			remoteInfo = RMessage;
+		};
+		4F812AECCA5AE8E29217128F493E3389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B50283C86225FEF5EC003DD079A76F6D;
+			remoteInfo = SwiftHEXColors;
+		};
+		6E74CCE70BC34531F9135DD3F4339C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7A242603ED7333794F270586FA2B22D;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		7492B4FE3C2EC00C9418AF26108E4AA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F2B7C925C7E1D66AE0C552B312137B6;
+			remoteInfo = SVProgressHUD;
+		};
+		76F07AA0792F41AC34B918C0CD77571C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A9905CB1F800238DCF11CDEC10C361;
+			remoteInfo = "CountryPickerView-CountryPickerView";
+		};
+		8B2922E27980870FDC29F5792DB07DCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B14184B2B5F039628B81730E798E9E97;
+			remoteInfo = HexColors;
+		};
+		8EF6E59DBFD1C915A226BBA50FF8329F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD4A1F3241689B2EDF6B986145988514;
+			remoteInfo = SwiftyJSON;
+		};
+		96AFBCFF9C88314ED3177DC4D28E8772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24384DEF2FEB0D810C36BCC3D8BBCDFB;
+			remoteInfo = CountryPickerView;
+		};
+		D4F07A6DEF5C7AC560B466F0D00B9150 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F437DF4A7F22FDECCDF603E76D5454DF;
+			remoteInfo = JJFloatingActionButton;
+		};
+		F071E13003CDC4EDADD600E832DDD797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05B9852E4B188EF4EC93B1E3F0712B2E;
+			remoteInfo = "ActionSheetPicker-3.0";
+		};
+		F803F2269B688D0C361622C8ADA9338B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B14184B2B5F039628B81730E798E9E97;
+			remoteInfo = HexColors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000340367513A020F06D9BFC5C536A55 /* Delegate+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Delegate+DataSource.swift"; path = "CountryPickerView/Delegate+DataSource.swift"; sourceTree = "<group>"; };
+		00D9446B05354FBC8E08FC4FCF292606 /* HexColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-umbrella.h"; sourceTree = "<group>"; };
+		02FC00A4886D29884D0CEC3539C7B72F /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		063FFAF915CDC7F79A3C981D9FF07BB6 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		0662289747018C938AEDC08266938C77 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		06A2A8F33B43A746611E41C1C05453BA /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		073FC269E6B12441E7E89B3F6FBD93B9 /* Data */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Data; path = CountryPickerView/Assets/CountryPickerView.bundle/Data; sourceTree = "<group>"; };
+		07F28D4D19A68F242B9915E5BB3DAE88 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetLocalePicker.h; path = Pickers/ActionSheetLocalePicker.h; sourceTree = "<group>"; };
+		084C3ACF95331E6CAF6B8D875FD8D4F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		084F6D24F44C208CF7D9246B3030CDD5 /* RMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08D0C0C7D8B987F923274D85D2101D5B /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDistancePicker.h; path = Pickers/ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		090119EB3F5E9D9392AF2E56489FDA05 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		09AC02BD6A0D7E5C93E1AE1D25190614 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		09EBFF3FBB2958783DA1A563BA68E281 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		0B0B9F6D4BA87A59E5077BAC41EEC4B8 /* UIColor+JJFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+JJFloatingActionButton.swift"; path = "Sources/UIColor+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
+		0BA14F07F1D77AE1BE47DD088853EB11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C257EFA250BB2146DB82B3CCA5337EC /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		0E031B2B462A7DCE770D37EA120A15F1 /* JJFloatingActionButton+Placement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JJFloatingActionButton+Placement.swift"; path = "Sources/JJFloatingActionButton+Placement.swift"; sourceTree = "<group>"; };
+		1017BEF97BF5FE26683DF57A69316EF8 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		1042826DF21475FB562C8E054A7EED28 /* RMController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RMController.swift; path = Sources/RMController/RMController.swift; sourceTree = "<group>"; };
+		10BB566834B124B998A62007EDBE443B /* RMControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RMControllerDelegate.swift; path = Sources/RMController/RMControllerDelegate.swift; sourceTree = "<group>"; };
+		1549A26D9E3C2374E171EAFDE4636454 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		15527DB59A552FB40F6221F4FE2A84D9 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		15747293382B5ACB45612E6EB59C2F33 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		1588D8C98F249BF17B254CD91978EB75 /* RMShowOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RMShowOperation.swift; path = Sources/RMController/RMShowOperation.swift; sourceTree = "<group>"; };
+		1A07E5A7D636849C0DDAA007237F47AB /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		1A59BA22F0D0DAE1DBF47AA516517A49 /* Pods_Faveo_Helpdesk_Community.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faveo_Helpdesk_Community.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7B1FF69EA679401443D54DBEC06183 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		1BC94F66A4675EFD69F0BF860A542C01 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		1CC20A980565B1577F5390264FFF3258 /* ActionSheetPicker-3.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ActionSheetPicker-3.0.xcconfig"; sourceTree = "<group>"; };
+		1D48F7710898DB817D0B053EA2991D9D /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		1DA07E143F0B7BAB8BCC46AADC71A471 /* JJFloatingActionButtonState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJFloatingActionButtonState.swift; path = Sources/JJFloatingActionButtonState.swift; sourceTree = "<group>"; };
+		200E9E46B63F205BBE8BE4AA70350A48 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		20BDAA5C3B27CBA2E002AB53152715CE /* RMPresenterOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RMPresenterOptions.swift; path = Sources/RMPresenter/RMPresenterOptions.swift; sourceTree = "<group>"; };
+		20D3B6A03023BC6ED857DDC29D172EEC /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		21C22D79784E38811D3E7C422FADD0A4 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		22E82156E47D44127D83341E33F04BD5 /* RMessageSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RMessageSpec.swift; path = Sources/RMessage/RMessageSpec.swift; sourceTree = "<group>"; };
+		240CD7DA4964748F39AF91569304E399 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		24A7673C8E7769FFB96C0CA9117349CF /* SlideAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideAnimator.swift; path = Sources/RMessage/Animators/SlideAnimator.swift; sourceTree = "<group>"; };
+		24B14F9943E7F1B47571BCD07346295E /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		2540CC432EDBC7EE7B4AAD1D38031A70 /* ActionSheetPicker-3.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-umbrella.h"; sourceTree = "<group>"; };
+		272E9F2F62BFFC083D24C7767D6A6842 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		278490AC3932BFA224F5DA468C0CFC91 /* Pods-Faveo Helpdesk Community.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Faveo Helpdesk Community.modulemap"; sourceTree = "<group>"; };
+		2956FCD53C0DBE938F344C1669E5CAEA /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		2A3C30FBB6A93A84AB46168374C1E0E5 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A8006A3E3CD07BC1307FE98BFDD73B2 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPicker.h; path = Pickers/ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		2B7BF69E8CFB86E1301A3407BAB7B962 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		2CAA1886313B096EE6D596C376CB43AB /* JJFloatingActionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JJFloatingActionButton.xcconfig; sourceTree = "<group>"; };
+		2FA8F0A909AAF53122684758F060EF14 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		31D38AAC91EF78447A601061E71F4C2E /* HexColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HexColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33334AFDF00A5C5A9BF8866093C6F1B3 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		342DCE40DF1B898615504A656F5313DC /* Pods-Faveo Helpdesk Community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Faveo Helpdesk Community.debug.xcconfig"; sourceTree = "<group>"; };
+		3515FB3A9CFE73C7BC6C8633B9B8B899 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = CountryPickerView/Extensions.swift; sourceTree = "<group>"; };
+		36708791CC11C9CE3D3AC21F05280ABD /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		368E0503150E6A0519C8AB4E5F1CA214 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		36AD8DB68E7CE8CD6E79FD831DEE26E1 /* JJFloatingActionButton+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JJFloatingActionButton+Animation.swift"; path = "Sources/JJFloatingActionButton+Animation.swift"; sourceTree = "<group>"; };
+		3871192E1D3CF515319164B093F22F84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		390E2347D72280DEBA6ACED440F1A699 /* SWActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWActionSheet.h; path = Pickers/SWActionSheet.h; sourceTree = "<group>"; };
+		393FFA01DB41FE9156C47CEAC31C079B /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		3A6037CCDB789F69BF794D3FE4A3CE24 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		3B9E73200E0850DA04278FDA38D2042D /* JJCircleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJCircleView.swift; path = Sources/JJCircleView.swift; sourceTree = "<group>"; };
+		3C510C24A585EA706E39FC63FDE1D363 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		3CCABB4488C85C3446FABD4688AF92AA /* HexColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HexColors.xcconfig; sourceTree = "<group>"; };
+		3D229A8991E280A8AFFD2ACF54F8EBE4 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		3F076E61804C2681EC67102FF05DA49C /* HexColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-prefix.pch"; sourceTree = "<group>"; };
+		429B3AC231980D55054415B9D299A03B /* ResourceBundle-CountryPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CountryPickerView-Info.plist"; sourceTree = "<group>"; };
+		45033B74797AD5F8F6DFA4B84B47F7F4 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		47CDC8287758DD3BC64342AA2C94A8D2 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4BF8F38483507ECA585BABBD128C2F6E /* CountryPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerView-prefix.pch"; sourceTree = "<group>"; };
+		4D10393DAFACE9C596FAE3140E5C29CF /* JJFloatingActionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JJFloatingActionButton.modulemap; sourceTree = "<group>"; };
+		4F32BAD07B4F747C64F8D33D6FBA06FE /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		4F65B77D2002C25C54D9B7DDB3CFDF8C /* RMessage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RMessage-dummy.m"; sourceTree = "<group>"; };
+		4FB29B0FB9963570E9B0D4CB2B059E6F /* LayerProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerProperties.swift; path = Sources/LayerProperties.swift; sourceTree = "<group>"; };
+		5018206CAEA055EC275E9FA7FAF1718A /* JJActionItemTitlePosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJActionItemTitlePosition.swift; path = Sources/JJActionItemTitlePosition.swift; sourceTree = "<group>"; };
+		5063AA1742EB22D0E1DF56ADBC3A1B58 /* CountryPickerView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountryPickerView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		529ED553EA4CE2F8843299D6CEA54AF5 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		54BBE153AECE5CE70D6CFF9147AD9CAE /* ActionSheetPicker-3.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActionSheetPicker-3.0-dummy.m"; sourceTree = "<group>"; };
+		5635389A48E3806F7A1463874613B66B /* RMessage.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = RMessage.xib; path = Sources/Resources/RMessage.xib; sourceTree = "<group>"; };
+		56A1FF2F6D80B6266782DE7A8FE1F85B /* Styles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Styles.swift; path = Sources/Styles.swift; sourceTree = "<group>"; };
+		570CFA103495C19778192EC43830133A /* CountryPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerView-umbrella.h"; sourceTree = "<group>"; };
+		585CB1425CBB3D6A3DC55A291063077F /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		5BFC0E91069F1D4B1C21BFA1104FC2A5 /* UIView+JJFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JJFloatingActionButton.swift"; path = "Sources/UIView+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
+		5C133ABB0478A898D1C9EF94124D4AC0 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		5CC03BD50096351EE95B047B75C5640E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC20078A8E77141B5AEA8214565C55F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D311480C6460869393F8D5BE96B0E59 /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
+		5EC890AE2FFD0BFB6C8B0FDB7ED6567E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA329D54E3E5BDDF566D0917CEF923B /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		5FD06BCB6305FCE750545401AE59CA45 /* CountryPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryPickerView.swift; path = CountryPickerView/CountryPickerView.swift; sourceTree = "<group>"; };
+		62591017FDE823216F81BC498912A271 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		63E3D6919CE4B5532986FC5C49D75A71 /* HexColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HexColors-dummy.m"; sourceTree = "<group>"; };
+		67EA634BB4BBFEC9C1843AD92971302F /* NibView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibView.swift; path = CountryPickerView/NibView.swift; sourceTree = "<group>"; };
+		6B64583F9C8C9D8B366CA1C7F4149619 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		6BD2D8939E3BAF23402FB06A8D9831FC /* Pods-Faveo Helpdesk Community-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Faveo Helpdesk Community-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6C290DE9DE54E92EB7CAE715B2B8A7F0 /* Pods-Faveo Helpdesk Community-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Faveo Helpdesk Community-dummy.m"; sourceTree = "<group>"; };
+		71F3C037141FB5E5F84C0AE06C2302BA /* Pods-Faveo Helpdesk Community-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Faveo Helpdesk Community-acknowledgements.plist"; sourceTree = "<group>"; };
+		72F7FE592EC82557280DADC64EAEC843 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
+		768F1A01D508F5321921D1A796AB9FA0 /* Pods-Faveo Helpdesk Community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Faveo Helpdesk Community.release.xcconfig"; sourceTree = "<group>"; };
+		7882669DF08F3CB0DDFAE87E464C2C10 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		79361F1508CB74827B49358F33E56FDF /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		7CA25AA52385B8DA33AC61E2A668841F /* HexColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HexColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDCCB60F033576A23849596B0820DB3 /* JJFloatingActionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JJFloatingActionButton-umbrella.h"; sourceTree = "<group>"; };
+		80949B49E4652DD7DB02155D170C890D /* HexColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HexColors.modulemap; sourceTree = "<group>"; };
+		80F9C06178B07BE78C3863AC97F0C5F0 /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
+		835C5DF344F2978A478DD58F61DDF81B /* ActionSheetPicker_3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionSheetPicker_3_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ECC7953ED4AEDB860C4B4225192E77 /* ActionSheetPicker-3.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-prefix.pch"; sourceTree = "<group>"; };
+		88A108DC46EC78B0735A809E2C6A7671 /* JJFloatingActionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JJFloatingActionButton-prefix.pch"; sourceTree = "<group>"; };
+		8971E7E2B4B3AFA0188F414C30ACC006 /* JJActionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJActionItem.swift; path = Sources/JJActionItem.swift; sourceTree = "<group>"; };
+		8B3E178A9CC263C4F763528E4443C35B /* HexColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColors.swift; path = Sources/HexColors.swift; sourceTree = "<group>"; };
+		8BBCE2064000368140B3F52C944AD65C /* RMessage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RMessage.xcconfig; sourceTree = "<group>"; };
+		8E86E70E58E46E3B1761546CA76E7463 /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
+		906787D069389D87DF9A8EBE7EF4A460 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = Pickers/ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		9087C6414C914BCBA119D8839AFC16BF /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		90AEFD5DE0350D5781F4737592E02E2F /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93B6F1F25A5F93F75CDFBD8BE070F189 /* CountryPickerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CountryPickerView.xib; path = CountryPickerView/CountryPickerView.xib; sourceTree = "<group>"; };
+		976C6FDDBD8A65853005BCEED8E279D8 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		97FF9B28869ED72A41907AD76ACC9386 /* CountryPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountryPickerView-dummy.m"; sourceTree = "<group>"; };
+		987633D7A3A85C389CD4BB36DAB21683 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		9A0A0CBEF1B0C5711D7C45AE2F395419 /* ActionSheetPicker-3.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ActionSheetPicker-3.0.modulemap"; sourceTree = "<group>"; };
+		9C903F9921DD9D876DF8D1FA2CD6CB7A /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		9EE74F4A8D5FCF89E0181B20FDB0F94B /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		A1638EA6F38F92092AF9FE0A68454A44 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = Pickers/ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		A67116A3278CEF917E803D16F9467A1D /* CountryPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CountryPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC120B347AE1E54E5260FA39A38E189A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B147E41ADAC6130F29449391A75F4185 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1710EF518BCFFEF44B3B2C82991025F /* DistancePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = Pickers/DistancePickerView.h; sourceTree = "<group>"; };
+		B3C741E8288FBFAEFDE135B78F858396 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		B40086A6119BCA6222E0A528934B861B /* CountryPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountryPickerView.xcconfig; sourceTree = "<group>"; };
+		B4114818AA074765E2A2161F9B6BDAFD /* RMessage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMessage-umbrella.h"; sourceTree = "<group>"; };
+		B772DE2F17AE3C01FFA67A912B3AA9FB /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		B7B8FE6F954FD394F5E51E6E28FB1D1B /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		B7E15D3C032B9D39154E8D2E6269DFAC /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		BA5DF995DEAEDC1B206138D6C145F6BD /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		BA80309000ABD6CD715B42CD273382F4 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetStringPicker.m; path = Pickers/ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		BA8AC34617645B660947B2FF8F35623F /* UIWindow+ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWindow+ViewController.swift"; path = "Sources/General Extensions/UIWindow+ViewController.swift"; sourceTree = "<group>"; };
+		BBD878A2E8BEAA37BDA9977D40B34B26 /* DistancePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DistancePickerView.m; path = Pickers/DistancePickerView.m; sourceTree = "<group>"; };
+		BE541C190FE1FC01938156283D553969 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		BFD1401A220A26BAA078ABBB4A8C5606 /* SWActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWActionSheet.m; path = Pickers/SWActionSheet.m; sourceTree = "<group>"; };
+		BFFA3E17D9E1D1F0BF71E6E3F5A5E132 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		C045A8F297568AAD4B12A68D579B5D9F /* Pods-Faveo Helpdesk Community-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Faveo Helpdesk Community-frameworks.sh"; sourceTree = "<group>"; };
+		C08696D1C3BEC24C385BF021932F4901 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		C2BC375BCDFED7BAC1D00BD8C38322F2 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetCustomPicker.m; path = Pickers/ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		C2C529FDBA631175D01C957CC9788B66 /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetLocalePicker.m; path = Pickers/ActionSheetLocalePicker.m; sourceTree = "<group>"; };
+		C3F7AA21AD8AAC565BD6CCAA6EE1984A /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		C6C3E4B3FCF2372014CC3E6C2D4C7702 /* RMessage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RMessage.modulemap; sourceTree = "<group>"; };
+		C8DDD6CC9F06D964FAB714B57BCA63F2 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		C910AD23CAC3245FD560F22EDA14C1E4 /* RMPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RMPresenter.swift; path = Sources/RMPresenter/RMPresenter.swift; sourceTree = "<group>"; };
+		CA2258EF8CBC6158AC68393602ABE2AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB664172E304560298287CA10890E75D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB94E5E968B0D805C6D3055D62EB3B92 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Images; path = CountryPickerView/Assets/CountryPickerView.bundle/Images; sourceTree = "<group>"; };
+		CEDF817FB102B5B51E875B22B30EA53B /* RMPresenterDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RMPresenterDelegate.swift; path = Sources/RMPresenter/RMPresenterDelegate.swift; sourceTree = "<group>"; };
+		CF0B6F9AD6499B8E5AB0217022ECB757 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF79DA25CE3C723517A88947E221FC69 /* CountryPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryPickerViewController.swift; path = CountryPickerView/CountryPickerViewController.swift; sourceTree = "<group>"; };
+		D1254CA51FA73DE028FAFE44977CE07F /* RMessage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMessage-prefix.pch"; sourceTree = "<group>"; };
+		D1AF77775EC85707828F7E5E401D9CEF /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		D32CB4DC1C3039165C7FDD43E3AAE1F1 /* RMAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RMAnimator.swift; path = Sources/RMAnimator/RMAnimator.swift; sourceTree = "<group>"; };
+		D480594B480F3B281E9E717F0DEB02E0 /* RMPresenter+TouchCompletion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RMPresenter+TouchCompletion.swift"; path = "Sources/RMPresenter/RMPresenter+TouchCompletion.swift"; sourceTree = "<group>"; };
+		D5CA83692B5AF74DF2FF6C3422452B88 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		D7F0920E04DD3537B10E3B8728CC0911 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		DA07E6344B316D63EA15F20FBBBEFBEC /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = Pickers/AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		DA3650CA0DE531143603046056B10055 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPickerDelegate.h; path = Pickers/ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		DA5176D2E259DDF056037E9D814F1E08 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		DB8FB66B3DAA6457E1093B4BD4C16378 /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
+		DBD9CD981141575027F13FE279F3F8B9 /* JJFloatingActionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JJFloatingActionButton-dummy.m"; sourceTree = "<group>"; };
+		DCF27E4BB5E56DF0D799A96463F05F7D /* AnimationConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationConfiguration.swift; path = Sources/AnimationConfiguration.swift; sourceTree = "<group>"; };
+		DE4B9EE21F0301B6A899B05D05101BE9 /* RMessage+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RMessage+Components.swift"; path = "Sources/RMessage/Extensions/RMessage+Components.swift"; sourceTree = "<group>"; };
+		E01CA1EE6D142F24FFE916CBC6A1548B /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
+		E123BD69D774146FAE724CC3833AA536 /* RMAnimationOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RMAnimationOptions.swift; path = Sources/RMAnimator/RMAnimationOptions.swift; sourceTree = "<group>"; };
+		E222A975EEF6BC5189A72C118DD50E84 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		E3F55EDDA9EC1BB7F055B70B7ECAB5A0 /* ActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetPicker.h; path = Pickers/ActionSheetPicker.h; sourceTree = "<group>"; };
+		E4AD847B246EC10F51CB61EA462E38A6 /* Pods-Faveo Helpdesk Community-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Faveo Helpdesk Community-resources.sh"; sourceTree = "<group>"; };
+		E4B18A561489850ACAB4C2EEFB08A106 /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
+		E66E6DD1BE2597C178334D35F6566970 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		E705F69505365607A4D95857CB483F92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		E71218886A810DAD5CA873B1D09BAF40 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		E8AC181D137AD65B3F6A03EF74EA19CB /* ActionSheetMultipleStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetMultipleStringPicker.m; path = Pickers/ActionSheetMultipleStringPicker.m; sourceTree = "<group>"; };
+		EB2A6AD688F112A4A5A356FE64F4435E /* JJFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JJFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB40062A65697CE790FD108CDA48D5FE /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		EE6393C71A78EA339E15F158D2309B11 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB07E28AA33DF9821F35146C25FE074 /* ActionSheetMultipleStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetMultipleStringPicker.h; path = Pickers/ActionSheetMultipleStringPicker.h; sourceTree = "<group>"; };
+		EF099EAC0C266F7FEE20DD7A457D0005 /* JJFloatingActionButtonDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJFloatingActionButtonDelegate.swift; path = Sources/JJFloatingActionButtonDelegate.swift; sourceTree = "<group>"; };
+		F03C36B57F3B2E3E8A69AFCFEB31165E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0731683C2FDB65A1DF92E5AAE8DCB05 /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
+		F2807684B2E91F2E00E4CDE9E2B0ABDD /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		F2AE8882853ADE4076829E17BD8356F0 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		F2E695D5EEC2466158B6CAEF75B15ED3 /* RMessage+Design.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RMessage+Design.swift"; path = "Sources/RMessage/Extensions/RMessage+Design.swift"; sourceTree = "<group>"; };
+		F3B6E04C1E14A1309F0A996D6F2F91F1 /* Pods-Faveo Helpdesk Community-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Faveo Helpdesk Community-umbrella.h"; sourceTree = "<group>"; };
+		F9309030BAE4B2C25B3FF890E6BA17CD /* JJFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JJFloatingActionButton.swift; path = Sources/JJFloatingActionButton.swift; sourceTree = "<group>"; };
+		F9A367F8A667A041B81871D7684C80DE /* RMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RMessage.swift; path = Sources/RMessage/RMessage.swift; sourceTree = "<group>"; };
+		FA465D4B5F73F0BF210D786C1E815FEB /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE76333F612A8CE3BD836D63F3274A43 /* CountryPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CountryPickerView.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0421AB959B07D0F37AD90CA3FEE4D6A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7142D5F054A61C071BA89ED7369DCEB /* Foundation.framework in Frameworks */,
+				7FC8C6A9A61C948D232DC69B86CD4571 /* HexColors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DD68F9A3329B30C9055AAFA77BADE59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAE68FA8C657F0C0FCD913997B12A04 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E391EAFB429199C7F20BD72A8A1776B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A93D137EB62F001CBC275BD8B19CD51 /* CoreGraphics.framework in Frameworks */,
+				DB1DFD55BB3B9267B04BBAAB8AF17829 /* Foundation.framework in Frameworks */,
+				60AC14B5788F6246B77EF7B4F23ED72E /* QuartzCore.framework in Frameworks */,
+				BA2656E48077A6E2B12C48B29C80728E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563731C78A5EB388237BF886BB1AC72F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9550E53A570B6193A84973AA6768982E /* Foundation.framework in Frameworks */,
+				02D3EB6BEB352DD3EC497F7025957A8F /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8AF668A2161F7D6F680F721DB65D2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EC5B74B9B5DC842F4179D19E6DE6D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F60DD7F255194DB9F6E471740525E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8A4C909754685BE38C1634A57E1638 /* Foundation.framework in Frameworks */,
+				D92564251F9E24490487C5DF39B0AEF1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BC325884CC1E4BA03E5FE3592A21D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E574D7CE322F8701636E3E6061D6A6DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D5D00F462B2389E0693978C58B84B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC2C25C2F236363C1AE357C3E1B44901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F6887B63EA58E47332FAAA6B92A6FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43DD3395023CE13EC47B38547B0861D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C458FFE36D2D6CB35B780439C99AD19D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7AC33846B2CD4AEB1866E4358CD769B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021E3A7F38DF398A27CFD3B097FE7862 /* Foundation.framework in Frameworks */,
+				ED9AC32D2C359743C5842B322BE3EB7A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA37D93AFE3F3D494C02723488B596B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE07F92BED937D19BAFD70A17F6AA498 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06D60E435B0D77ACFA2DF511CD54FC64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A91BBD49CEA5068A58F8C44474531EAE /* ActionSheetPicker-3.0 */,
+				6C4BCA52755970149EAA8D106A70374D /* Alamofire */,
+				25347061B7FF11420B5AA310897E1B71 /* CountryPickerView */,
+				C44DBDDF0AC610A3424D3BEC4E4D0E29 /* HexColors */,
+				D83E9D301C4F6315A9E83A0FD7880C8D /* IQKeyboardManagerSwift */,
+				A215267BB4856282ADC31BAB06EF0906 /* JJFloatingActionButton */,
+				3453840E0A91A68A674669B4CB1A9F25 /* RMessage */,
+				B5DDEBC10A0058FC41917E83B4B01F49 /* SVProgressHUD */,
+				6DE08EF8961AE69A35E0AA7523E2525F /* SwiftHEXColors */,
+				68B310904FE48DA3BE421D62ACE62ECA /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0E7F4F8C71B0E9B6ECB9C6EB5C096B8D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				084C3ACF95331E6CAF6B8D875FD8D4F9 /* Info.plist */,
+				45033B74797AD5F8F6DFA4B84B47F7F4 /* SVProgressHUD.modulemap */,
+				3D229A8991E280A8AFFD2ACF54F8EBE4 /* SVProgressHUD.xcconfig */,
+				585CB1425CBB3D6A3DC55A291063077F /* SVProgressHUD-dummy.m */,
+				1D48F7710898DB817D0B053EA2991D9D /* SVProgressHUD-prefix.pch */,
+				24B14F9943E7F1B47571BCD07346295E /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		15F08A1CE6379D4BB1F741C634814E10 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB664172E304560298287CA10890E75D /* Info.plist */,
+				F0731683C2FDB65A1DF92E5AAE8DCB05 /* SwiftHEXColors.modulemap */,
+				80F9C06178B07BE78C3863AC97F0C5F0 /* SwiftHEXColors.xcconfig */,
+				E4B18A561489850ACAB4C2EEFB08A106 /* SwiftHEXColors-dummy.m */,
+				8E86E70E58E46E3B1761546CA76E7463 /* SwiftHEXColors-prefix.pch */,
+				E01CA1EE6D142F24FFE916CBC6A1548B /* SwiftHEXColors-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftHEXColors";
+			sourceTree = "<group>";
+		};
+		25347061B7FF11420B5AA310897E1B71 /* CountryPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				5FD06BCB6305FCE750545401AE59CA45 /* CountryPickerView.swift */,
+				93B6F1F25A5F93F75CDFBD8BE070F189 /* CountryPickerView.xib */,
+				CF79DA25CE3C723517A88947E221FC69 /* CountryPickerViewController.swift */,
+				000340367513A020F06D9BFC5C536A55 /* Delegate+DataSource.swift */,
+				3515FB3A9CFE73C7BC6C8633B9B8B899 /* Extensions.swift */,
+				67EA634BB4BBFEC9C1843AD92971302F /* NibView.swift */,
+				AB18DF8F738967C5288692F7A4EA2348 /* Resources */,
+				A112AD91C8A5147662E287BEDE238C95 /* Support Files */,
+			);
+			path = CountryPickerView;
+			sourceTree = "<group>";
+		};
+		25535A46AB02E71B5DBC0436C39FF297 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7F0920E04DD3537B10E3B8728CC0911 /* Alamofire.modulemap */,
+				1549A26D9E3C2374E171EAFDE4636454 /* Alamofire.xcconfig */,
+				976C6FDDBD8A65853005BCEED8E279D8 /* Alamofire-dummy.m */,
+				E222A975EEF6BC5189A72C118DD50E84 /* Alamofire-prefix.pch */,
+				7882669DF08F3CB0DDFAE87E464C2C10 /* Alamofire-umbrella.h */,
+				3871192E1D3CF515319164B093F22F84 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		3453840E0A91A68A674669B4CB1A9F25 /* RMessage */ = {
+			isa = PBXGroup;
+			children = (
+				E123BD69D774146FAE724CC3833AA536 /* RMAnimationOptions.swift */,
+				D32CB4DC1C3039165C7FDD43E3AAE1F1 /* RMAnimator.swift */,
+				1042826DF21475FB562C8E054A7EED28 /* RMController.swift */,
+				10BB566834B124B998A62007EDBE443B /* RMControllerDelegate.swift */,
+				F9A367F8A667A041B81871D7684C80DE /* RMessage.swift */,
+				DE4B9EE21F0301B6A899B05D05101BE9 /* RMessage+Components.swift */,
+				F2E695D5EEC2466158B6CAEF75B15ED3 /* RMessage+Design.swift */,
+				22E82156E47D44127D83341E33F04BD5 /* RMessageSpec.swift */,
+				C910AD23CAC3245FD560F22EDA14C1E4 /* RMPresenter.swift */,
+				D480594B480F3B281E9E717F0DEB02E0 /* RMPresenter+TouchCompletion.swift */,
+				CEDF817FB102B5B51E875B22B30EA53B /* RMPresenterDelegate.swift */,
+				20BDAA5C3B27CBA2E002AB53152715CE /* RMPresenterOptions.swift */,
+				1588D8C98F249BF17B254CD91978EB75 /* RMShowOperation.swift */,
+				24A7673C8E7769FFB96C0CA9117349CF /* SlideAnimator.swift */,
+				BA8AC34617645B660947B2FF8F35623F /* UIWindow+ViewController.swift */,
+				85685839AD9AE93753AF49E645CFFBB9 /* Resources */,
+				BEC2716C6899A65FA6A8DEEB812EB80E /* Support Files */,
+			);
+			path = RMessage;
+			sourceTree = "<group>";
+		};
+		34F46F6F3734D1460769AC04594D0473 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBF2C8B5E07CF5A843BF67C8141CFFAF /* Pods-Faveo Helpdesk Community */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		35F66D8CBF8EF31C935F8F91101538E5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E705F69505365607A4D95857CB483F92 /* CoreGraphics.framework */,
+				4AF694D58E5E008BC2574A0007918E44 /* Foundation.framework */,
+				0662289747018C938AEDC08266938C77 /* QuartzCore.framework */,
+				368E0503150E6A0519C8AB4E5F1CA214 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		40CE42F540153F47A18AE55EFFE2427B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF0B6F9AD6499B8E5AB0217022ECB757 /* Info.plist */,
+				4D10393DAFACE9C596FAE3140E5C29CF /* JJFloatingActionButton.modulemap */,
+				2CAA1886313B096EE6D596C376CB43AB /* JJFloatingActionButton.xcconfig */,
+				DBD9CD981141575027F13FE279F3F8B9 /* JJFloatingActionButton-dummy.m */,
+				88A108DC46EC78B0735A809E2C6A7671 /* JJFloatingActionButton-prefix.pch */,
+				7EDCCB60F033576A23849596B0820DB3 /* JJFloatingActionButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JJFloatingActionButton";
+			sourceTree = "<group>";
+		};
+		4C208D00D1092E3BE596D7B1F5F46CEC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BA14F07F1D77AE1BE47DD088853EB11 /* Info.plist */,
+				B7B8FE6F954FD394F5E51E6E28FB1D1B /* IQKeyboardManagerSwift.modulemap */,
+				0C257EFA250BB2146DB82B3CCA5337EC /* IQKeyboardManagerSwift.xcconfig */,
+				2B7BF69E8CFB86E1301A3407BAB7B962 /* IQKeyboardManagerSwift-dummy.m */,
+				33334AFDF00A5C5A9BF8866093C6F1B3 /* IQKeyboardManagerSwift-prefix.pch */,
+				BE541C190FE1FC01938156283D553969 /* IQKeyboardManagerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		68B310904FE48DA3BE421D62ACE62ECA /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				090119EB3F5E9D9392AF2E56489FDA05 /* SwiftyJSON.swift */,
+				AB1926177503EA3311AA64FE0B5C7E05 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		6C4BCA52755970149EAA8D106A70374D /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				B7E15D3C032B9D39154E8D2E6269DFAC /* AFError.swift */,
+				20D3B6A03023BC6ED857DDC29D172EEC /* Alamofire.swift */,
+				02FC00A4886D29884D0CEC3539C7B72F /* DispatchQueue+Alamofire.swift */,
+				C3F7AA21AD8AAC565BD6CCAA6EE1984A /* MultipartFormData.swift */,
+				47CDC8287758DD3BC64342AA2C94A8D2 /* NetworkReachabilityManager.swift */,
+				F2807684B2E91F2E00E4CDE9E2B0ABDD /* Notifications.swift */,
+				9C903F9921DD9D876DF8D1FA2CD6CB7A /* ParameterEncoding.swift */,
+				2956FCD53C0DBE938F344C1669E5CAEA /* Request.swift */,
+				1A07E5A7D636849C0DDAA007237F47AB /* Response.swift */,
+				3A6037CCDB789F69BF794D3FE4A3CE24 /* ResponseSerialization.swift */,
+				272E9F2F62BFFC083D24C7767D6A6842 /* Result.swift */,
+				E71218886A810DAD5CA873B1D09BAF40 /* ServerTrustPolicy.swift */,
+				1BC94F66A4675EFD69F0BF860A542C01 /* SessionDelegate.swift */,
+				200E9E46B63F205BBE8BE4AA70350A48 /* SessionManager.swift */,
+				3C510C24A585EA706E39FC63FDE1D363 /* TaskDelegate.swift */,
+				4F32BAD07B4F747C64F8D33D6FBA06FE /* Timeline.swift */,
+				9087C6414C914BCBA119D8839AFC16BF /* Validation.swift */,
+				25535A46AB02E71B5DBC0436C39FF297 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		6DE08EF8961AE69A35E0AA7523E2525F /* SwiftHEXColors */ = {
+			isa = PBXGroup;
+			children = (
+				DB8FB66B3DAA6457E1093B4BD4C16378 /* SwiftHEXColors.h */,
+				72F7FE592EC82557280DADC64EAEC843 /* SwiftHEXColors.swift */,
+				15F08A1CE6379D4BB1F741C634814E10 /* Support Files */,
+			);
+			path = SwiftHEXColors;
+			sourceTree = "<group>";
+		};
+		77C39C4037E9997C49240E86C39DAB30 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				80949B49E4652DD7DB02155D170C890D /* HexColors.modulemap */,
+				3CCABB4488C85C3446FABD4688AF92AA /* HexColors.xcconfig */,
+				63E3D6919CE4B5532986FC5C49D75A71 /* HexColors-dummy.m */,
+				3F076E61804C2681EC67102FF05DA49C /* HexColors-prefix.pch */,
+				00D9446B05354FBC8E08FC4FCF292606 /* HexColors-umbrella.h */,
+				B147E41ADAC6130F29449391A75F4185 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HexColors";
+			sourceTree = "<group>";
+		};
+		780B80852F95C5CBCA311D52C87A5781 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31D38AAC91EF78447A601061E71F4C2E /* HexColors.framework */,
+				35F66D8CBF8EF31C935F8F91101538E5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BB536D56DBDFD95CD974C95160C1227 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2AE8882853ADE4076829E17BD8356F0 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				780B80852F95C5CBCA311D52C87A5781 /* Frameworks */,
+				06D60E435B0D77ACFA2DF511CD54FC64 /* Pods */,
+				8192A39AE9C6A5E987903B0807B171C9 /* Products */,
+				34F46F6F3734D1460769AC04594D0473 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8192A39AE9C6A5E987903B0807B171C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				835C5DF344F2978A478DD58F61DDF81B /* ActionSheetPicker_3_0.framework */,
+				5CC03BD50096351EE95B047B75C5640E /* Alamofire.framework */,
+				5063AA1742EB22D0E1DF56ADBC3A1B58 /* CountryPickerView.bundle */,
+				A67116A3278CEF917E803D16F9467A1D /* CountryPickerView.framework */,
+				7CA25AA52385B8DA33AC61E2A668841F /* HexColors.framework */,
+				2A3C30FBB6A93A84AB46168374C1E0E5 /* IQKeyboardManagerSwift.framework */,
+				EB2A6AD688F112A4A5A356FE64F4435E /* JJFloatingActionButton.framework */,
+				1A59BA22F0D0DAE1DBF47AA516517A49 /* Pods_Faveo_Helpdesk_Community.framework */,
+				084F6D24F44C208CF7D9246B3030CDD5 /* RMessage.framework */,
+				FA465D4B5F73F0BF210D786C1E815FEB /* SVProgressHUD.framework */,
+				36708791CC11C9CE3D3AC21F05280ABD /* SwiftHEXColors.framework */,
+				EE6393C71A78EA339E15F158D2309B11 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85685839AD9AE93753AF49E645CFFBB9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5635389A48E3806F7A1463874613B66B /* RMessage.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A112AD91C8A5147662E287BEDE238C95 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE76333F612A8CE3BD836D63F3274A43 /* CountryPickerView.modulemap */,
+				B40086A6119BCA6222E0A528934B861B /* CountryPickerView.xcconfig */,
+				97FF9B28869ED72A41907AD76ACC9386 /* CountryPickerView-dummy.m */,
+				4BF8F38483507ECA585BABBD128C2F6E /* CountryPickerView-prefix.pch */,
+				570CFA103495C19778192EC43830133A /* CountryPickerView-umbrella.h */,
+				5EC890AE2FFD0BFB6C8B0FDB7ED6567E /* Info.plist */,
+				429B3AC231980D55054415B9D299A03B /* ResourceBundle-CountryPickerView-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CountryPickerView";
+			sourceTree = "<group>";
+		};
+		A215267BB4856282ADC31BAB06EF0906 /* JJFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				DCF27E4BB5E56DF0D799A96463F05F7D /* AnimationConfiguration.swift */,
+				8971E7E2B4B3AFA0188F414C30ACC006 /* JJActionItem.swift */,
+				5018206CAEA055EC275E9FA7FAF1718A /* JJActionItemTitlePosition.swift */,
+				3B9E73200E0850DA04278FDA38D2042D /* JJCircleView.swift */,
+				F9309030BAE4B2C25B3FF890E6BA17CD /* JJFloatingActionButton.swift */,
+				36AD8DB68E7CE8CD6E79FD831DEE26E1 /* JJFloatingActionButton+Animation.swift */,
+				0E031B2B462A7DCE770D37EA120A15F1 /* JJFloatingActionButton+Placement.swift */,
+				EF099EAC0C266F7FEE20DD7A457D0005 /* JJFloatingActionButtonDelegate.swift */,
+				1DA07E143F0B7BAB8BCC46AADC71A471 /* JJFloatingActionButtonState.swift */,
+				4FB29B0FB9963570E9B0D4CB2B059E6F /* LayerProperties.swift */,
+				56A1FF2F6D80B6266782DE7A8FE1F85B /* Styles.swift */,
+				0B0B9F6D4BA87A59E5077BAC41EEC4B8 /* UIColor+JJFloatingActionButton.swift */,
+				5BFC0E91069F1D4B1C21BFA1104FC2A5 /* UIView+JJFloatingActionButton.swift */,
+				40CE42F540153F47A18AE55EFFE2427B /* Support Files */,
+			);
+			path = JJFloatingActionButton;
+			sourceTree = "<group>";
+		};
+		A91BBD49CEA5068A58F8C44474531EAE /* ActionSheetPicker-3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				DA07E6344B316D63EA15F20FBBBEFBEC /* AbstractActionSheetPicker.h */,
+				987633D7A3A85C389CD4BB36DAB21683 /* AbstractActionSheetPicker.m */,
+				2A8006A3E3CD07BC1307FE98BFDD73B2 /* ActionSheetCustomPicker.h */,
+				C2BC375BCDFED7BAC1D00BD8C38322F2 /* ActionSheetCustomPicker.m */,
+				DA3650CA0DE531143603046056B10055 /* ActionSheetCustomPickerDelegate.h */,
+				906787D069389D87DF9A8EBE7EF4A460 /* ActionSheetDatePicker.h */,
+				15527DB59A552FB40F6221F4FE2A84D9 /* ActionSheetDatePicker.m */,
+				08D0C0C7D8B987F923274D85D2101D5B /* ActionSheetDistancePicker.h */,
+				09EBFF3FBB2958783DA1A563BA68E281 /* ActionSheetDistancePicker.m */,
+				07F28D4D19A68F242B9915E5BB3DAE88 /* ActionSheetLocalePicker.h */,
+				C2C529FDBA631175D01C957CC9788B66 /* ActionSheetLocalePicker.m */,
+				EEB07E28AA33DF9821F35146C25FE074 /* ActionSheetMultipleStringPicker.h */,
+				E8AC181D137AD65B3F6A03EF74EA19CB /* ActionSheetMultipleStringPicker.m */,
+				E3F55EDDA9EC1BB7F055B70B7ECAB5A0 /* ActionSheetPicker.h */,
+				A1638EA6F38F92092AF9FE0A68454A44 /* ActionSheetStringPicker.h */,
+				BA80309000ABD6CD715B42CD273382F4 /* ActionSheetStringPicker.m */,
+				B1710EF518BCFFEF44B3B2C82991025F /* DistancePickerView.h */,
+				BBD878A2E8BEAA37BDA9977D40B34B26 /* DistancePickerView.m */,
+				390E2347D72280DEBA6ACED440F1A699 /* SWActionSheet.h */,
+				BFD1401A220A26BAA078ABBB4A8C5606 /* SWActionSheet.m */,
+				BCBBEEEE7FF4FA6C26D59C2616DC4C5C /* Support Files */,
+			);
+			path = "ActionSheetPicker-3.0";
+			sourceTree = "<group>";
+		};
+		AACDA756F7009B7E84798D9841F32A81 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				240CD7DA4964748F39AF91569304E399 /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AB18DF8F738967C5288692F7A4EA2348 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				073FC269E6B12441E7E89B3F6FBD93B9 /* Data */,
+				CB94E5E968B0D805C6D3055D62EB3B92 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AB1926177503EA3311AA64FE0B5C7E05 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC120B347AE1E54E5260FA39A38E189A /* Info.plist */,
+				DA5176D2E259DDF056037E9D814F1E08 /* SwiftyJSON.modulemap */,
+				15747293382B5ACB45612E6EB59C2F33 /* SwiftyJSON.xcconfig */,
+				BA5DF995DEAEDC1B206138D6C145F6BD /* SwiftyJSON-dummy.m */,
+				063FFAF915CDC7F79A3C981D9FF07BB6 /* SwiftyJSON-prefix.pch */,
+				EB40062A65697CE790FD108CDA48D5FE /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		B5DDEBC10A0058FC41917E83B4B01F49 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				529ED553EA4CE2F8843299D6CEA54AF5 /* SVIndefiniteAnimatedView.h */,
+				C8DDD6CC9F06D964FAB714B57BCA63F2 /* SVIndefiniteAnimatedView.m */,
+				5FA329D54E3E5BDDF566D0917CEF923B /* SVProgressAnimatedView.h */,
+				C08696D1C3BEC24C385BF021932F4901 /* SVProgressAnimatedView.m */,
+				D1AF77775EC85707828F7E5E401D9CEF /* SVProgressHUD.h */,
+				B772DE2F17AE3C01FFA67A912B3AA9FB /* SVProgressHUD.m */,
+				62591017FDE823216F81BC498912A271 /* SVRadialGradientLayer.h */,
+				D5CA83692B5AF74DF2FF6C3422452B88 /* SVRadialGradientLayer.m */,
+				7BB536D56DBDFD95CD974C95160C1227 /* Resources */,
+				0E7F4F8C71B0E9B6ECB9C6EB5C096B8D /* Support Files */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		BCBBEEEE7FF4FA6C26D59C2616DC4C5C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A0A0CBEF1B0C5711D7C45AE2F395419 /* ActionSheetPicker-3.0.modulemap */,
+				1CC20A980565B1577F5390264FFF3258 /* ActionSheetPicker-3.0.xcconfig */,
+				54BBE153AECE5CE70D6CFF9147AD9CAE /* ActionSheetPicker-3.0-dummy.m */,
+				84ECC7953ED4AEDB860C4B4225192E77 /* ActionSheetPicker-3.0-prefix.pch */,
+				2540CC432EDBC7EE7B4AAD1D38031A70 /* ActionSheetPicker-3.0-umbrella.h */,
+				F03C36B57F3B2E3E8A69AFCFEB31165E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ActionSheetPicker-3.0";
+			sourceTree = "<group>";
+		};
+		BEC2716C6899A65FA6A8DEEB812EB80E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CC20078A8E77141B5AEA8214565C55F /* Info.plist */,
+				C6C3E4B3FCF2372014CC3E6C2D4C7702 /* RMessage.modulemap */,
+				8BBCE2064000368140B3F52C944AD65C /* RMessage.xcconfig */,
+				4F65B77D2002C25C54D9B7DDB3CFDF8C /* RMessage-dummy.m */,
+				D1254CA51FA73DE028FAFE44977CE07F /* RMessage-prefix.pch */,
+				B4114818AA074765E2A2161F9B6BDAFD /* RMessage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RMessage";
+			sourceTree = "<group>";
+		};
+		C44DBDDF0AC610A3424D3BEC4E4D0E29 /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				8B3E178A9CC263C4F763528E4443C35B /* HexColors.swift */,
+				77C39C4037E9997C49240E86C39DAB30 /* Support Files */,
+			);
+			path = HexColors;
+			sourceTree = "<group>";
+		};
+		D83E9D301C4F6315A9E83A0FD7880C8D /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				79361F1508CB74827B49358F33E56FDF /* IQBarButtonItem.swift */,
+				5D311480C6460869393F8D5BE96B0E59 /* IQInvocation.swift */,
+				6B64583F9C8C9D8B366CA1C7F4149619 /* IQKeyboardManager.swift */,
+				BFFA3E17D9E1D1F0BF71E6E3F5A5E132 /* IQKeyboardManagerConstants.swift */,
+				09AC02BD6A0D7E5C93E1AE1D25190614 /* IQKeyboardManagerConstantsInternal.swift */,
+				393FFA01DB41FE9156C47CEAC31C079B /* IQKeyboardReturnKeyHandler.swift */,
+				90AEFD5DE0350D5781F4737592E02E2F /* IQNSArray+Sort.swift */,
+				5C133ABB0478A898D1C9EF94124D4AC0 /* IQPreviousNextView.swift */,
+				E66E6DD1BE2597C178334D35F6566970 /* IQTextView.swift */,
+				21C22D79784E38811D3E7C422FADD0A4 /* IQTitleBarButtonItem.swift */,
+				1017BEF97BF5FE26683DF57A69316EF8 /* IQToolbar.swift */,
+				2FA8F0A909AAF53122684758F060EF14 /* IQUIScrollView+Additions.swift */,
+				B3C741E8288FBFAEFDE135B78F858396 /* IQUITextFieldView+Additions.swift */,
+				1B7B1FF69EA679401443D54DBEC06183 /* IQUIView+Hierarchy.swift */,
+				06A2A8F33B43A746611E41C1C05453BA /* IQUIView+IQKeyboardToolbar.swift */,
+				9EE74F4A8D5FCF89E0181B20FDB0F94B /* IQUIViewController+Additions.swift */,
+				AACDA756F7009B7E84798D9841F32A81 /* Resources */,
+				4C208D00D1092E3BE596D7B1F5F46CEC /* Support Files */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		FBF2C8B5E07CF5A843BF67C8141CFFAF /* Pods-Faveo Helpdesk Community */ = {
+			isa = PBXGroup;
+			children = (
+				CA2258EF8CBC6158AC68393602ABE2AE /* Info.plist */,
+				278490AC3932BFA224F5DA468C0CFC91 /* Pods-Faveo Helpdesk Community.modulemap */,
+				6BD2D8939E3BAF23402FB06A8D9831FC /* Pods-Faveo Helpdesk Community-acknowledgements.markdown */,
+				71F3C037141FB5E5F84C0AE06C2302BA /* Pods-Faveo Helpdesk Community-acknowledgements.plist */,
+				6C290DE9DE54E92EB7CAE715B2B8A7F0 /* Pods-Faveo Helpdesk Community-dummy.m */,
+				C045A8F297568AAD4B12A68D579B5D9F /* Pods-Faveo Helpdesk Community-frameworks.sh */,
+				E4AD847B246EC10F51CB61EA462E38A6 /* Pods-Faveo Helpdesk Community-resources.sh */,
+				F3B6E04C1E14A1309F0A996D6F2F91F1 /* Pods-Faveo Helpdesk Community-umbrella.h */,
+				342DCE40DF1B898615504A656F5313DC /* Pods-Faveo Helpdesk Community.debug.xcconfig */,
+				768F1A01D508F5321921D1A796AB9FA0 /* Pods-Faveo Helpdesk Community.release.xcconfig */,
+			);
+			name = "Pods-Faveo Helpdesk Community";
+			path = "Target Support Files/Pods-Faveo Helpdesk Community";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06702C605C0520F70F08C18CE225422E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69546F27C5AC5061C7260878C2D9820 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5FB926ADB24825E8DEF03A1B17F539 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71B9C278379BF63105017C6E2ED01EB /* JJFloatingActionButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EBAF51DF7509BC4FA0E71A3A84F7D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B13116E2E4A02F846F36B5737AFD235 /* SVIndefiniteAnimatedView.h in Headers */,
+				54A60EB6A335BE15B2EF2CB8EDCE1FD9 /* SVProgressAnimatedView.h in Headers */,
+				15B9BDF0CDB325D32A501DCB70054A9F /* SVProgressHUD-umbrella.h in Headers */,
+				D1ECED4FBA8B8C67BCC1C47D6F50C00B /* SVProgressHUD.h in Headers */,
+				2BD326F548913D0EF8DDA289321E4AE5 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61016B7E25B2165C893B2FD933AAC33D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4526C43352F97623992ABC6D4E7450 /* HexColors-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66186FD4529E418AE6FCFA28D4C7CDA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C79EA46B35175AE97ADF4E5E026F325 /* Pods-Faveo Helpdesk Community-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		777508A22BC8235FB0387E89D6A9C12A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D007B23FA5DF1701D61350DFC40500 /* AbstractActionSheetPicker.h in Headers */,
+				D80520F915604ECE5AFC7C198210BD4F /* ActionSheetCustomPicker.h in Headers */,
+				0DEE8FE78BFA6837741490D5AE7E70D3 /* ActionSheetCustomPickerDelegate.h in Headers */,
+				04DC3AB008D664C94B53378D92A8357C /* ActionSheetDatePicker.h in Headers */,
+				6BC552C40935F9164B0565799E276A70 /* ActionSheetDistancePicker.h in Headers */,
+				0B58249E18BC6B5059BA58BF1F41ACB8 /* ActionSheetLocalePicker.h in Headers */,
+				B4FFBAAAB2020487F48B39A18F09BABC /* ActionSheetMultipleStringPicker.h in Headers */,
+				BD8C15CEC12E2C97775FCCF763C45DBF /* ActionSheetPicker-3.0-umbrella.h in Headers */,
+				D72525552EA381EFC7AC1F2617B30F12 /* ActionSheetPicker.h in Headers */,
+				BEE3F41C1AE3F63252F05C59C7E14088 /* ActionSheetStringPicker.h in Headers */,
+				A1805B3522AD2C8941E19640D7AA616B /* DistancePickerView.h in Headers */,
+				81F48B45BB3364F85399A085D2C6EB5D /* SWActionSheet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97436C0F539C1101021EF13686C812F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D346D095CC123BEF67C763C48261EE /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A607506FEAAC7C41268D3E5CF4E5FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1461221681BCA12A4147900A704727 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F8E5119F9BA8039291D7B16FCDC291 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAABF23A2819E9C9AC8F0654A928CDBC /* CountryPickerView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94A59276435D9966ABB57E936011413 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9934D7B34FFA698FE068F941DE8C2A01 /* RMessage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B19FE4F0FFCA5D74F2F04EB5C06838 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253308756716C88DC7EDA1743056F2C8 /* SwiftHEXColors-umbrella.h in Headers */,
+				E8E6DA8E6CEE5390EA835601C597C59B /* SwiftHEXColors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05B9852E4B188EF4EC93B1E3F0712B2E /* ActionSheetPicker-3.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B834EE00D33BF8584CE5177AF20C74F5 /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */;
+			buildPhases = (
+				777508A22BC8235FB0387E89D6A9C12A /* Headers */,
+				3F7FFB982F0051A523B49D4585B3471E /* Sources */,
+				E7AC33846B2CD4AEB1866E4358CD769B /* Frameworks */,
+				5087E7F7F15CCE848382FEF4A0A3C777 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ActionSheetPicker-3.0";
+			productName = "ActionSheetPicker-3.0";
+			productReference = 835C5DF344F2978A478DD58F61DDF81B /* ActionSheetPicker_3_0.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		24384DEF2FEB0D810C36BCC3D8BBCDFB /* CountryPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A6368C55CB537D521EAC42100B4897 /* Build configuration list for PBXNativeTarget "CountryPickerView" */;
+			buildPhases = (
+				C0F8E5119F9BA8039291D7B16FCDC291 /* Headers */,
+				25C2B5AA876F97F15016A47276E9FC2C /* Sources */,
+				E43DD3395023CE13EC47B38547B0861D /* Frameworks */,
+				73AE6CEBEC30C9BAA0FB64A4C786F23E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DCEC36555E5D41541F41B8EA15A68D3 /* PBXTargetDependency */,
+			);
+			name = CountryPickerView;
+			productName = CountryPickerView;
+			productReference = A67116A3278CEF917E803D16F9467A1D /* CountryPickerView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		35A9905CB1F800238DCF11CDEC10C361 /* CountryPickerView-CountryPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95BBF033C479330A75060CB3ACA32D4B /* Build configuration list for PBXNativeTarget "CountryPickerView-CountryPickerView" */;
+			buildPhases = (
+				201E10E7B75D4F9369910F865081137C /* Sources */,
+				92D5D00F462B2389E0693978C58B84B4 /* Frameworks */,
+				7D37C867572F5B1B3F5FFD9D24876772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CountryPickerView-CountryPickerView";
+			productName = "CountryPickerView-CountryPickerView";
+			productReference = 5063AA1742EB22D0E1DF56ADBC3A1B58 /* CountryPickerView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4F2B7C925C7E1D66AE0C552B312137B6 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35CB78590E8507BA19C3A3FA4F7A580 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				22EBAF51DF7509BC4FA0E71A3A84F7D8 /* Headers */,
+				DCB95E6D1AAE196552D41A468B4F4663 /* Sources */,
+				563731C78A5EB388237BF886BB1AC72F /* Frameworks */,
+				92C302C1CC03C246E3DB8B0BDE26F5FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = FA465D4B5F73F0BF210D786C1E815FEB /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6BC2FD8B82E16BD00C33C2A52A30EB76 /* Pods-Faveo Helpdesk Community */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8B03CA5F1D78DC3D14ACA339E71435 /* Build configuration list for PBXNativeTarget "Pods-Faveo Helpdesk Community" */;
+			buildPhases = (
+				66186FD4529E418AE6FCFA28D4C7CDA9 /* Headers */,
+				726D297D825F858482FEF5FCE4E29B87 /* Sources */,
+				8BC325884CC1E4BA03E5FE3592A21D11 /* Frameworks */,
+				C840F5AC3DAA4810A6AFAEB5A2576000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A961B46A15A70C28D50D3DBF8270FB60 /* PBXTargetDependency */,
+				4D01C881CE24AA755D52A04842FCF636 /* PBXTargetDependency */,
+				03F2416A4DB9FD0ACFF538A9AEAF8109 /* PBXTargetDependency */,
+				0FCCDBDAEDFD77C20CC299B439060F3E /* PBXTargetDependency */,
+				DF591B604D1FD508A2B5FAB71AECB80F /* PBXTargetDependency */,
+				1F2E2BE3EB52A4D1E1A796A4BF2EB017 /* PBXTargetDependency */,
+				04F5F8A5E2F590BC04D0AB8ECAE5F4A5 /* PBXTargetDependency */,
+				0FEDDE56727E194E758435800AB4AB45 /* PBXTargetDependency */,
+				01AAE2967C662FF27785AB8582ADF10C /* PBXTargetDependency */,
+				437731ED67E4E8BD0585BBF4559DFF0D /* PBXTargetDependency */,
+			);
+			name = "Pods-Faveo Helpdesk Community";
+			productName = "Pods-Faveo Helpdesk Community";
+			productReference = 1A59BA22F0D0DAE1DBF47AA516517A49 /* Pods_Faveo_Helpdesk_Community.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3C484FBA9936499839FE340CB064888 /* RMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 254FFB9B50CE5A7DAE9ADCEBBCB69863 /* Build configuration list for PBXNativeTarget "RMessage" */;
+			buildPhases = (
+				C94A59276435D9966ABB57E936011413 /* Headers */,
+				88DD657C6923BB6B34CCCB8B3D703691 /* Sources */,
+				0421AB959B07D0F37AD90CA3FEE4D6A5 /* Frameworks */,
+				D80DC158438A95F4789D062FF81D3383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC537333340B4A858973014918D31CE2 /* PBXTargetDependency */,
+			);
+			name = RMessage;
+			productName = RMessage;
+			productReference = 084F6D24F44C208CF7D9246B3030CDD5 /* RMessage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B14184B2B5F039628B81730E798E9E97 /* HexColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCDEAEF8AB948A101D51A253045AB1B /* Build configuration list for PBXNativeTarget "HexColors" */;
+			buildPhases = (
+				61016B7E25B2165C893B2FD933AAC33D /* Headers */,
+				30353817D2CCC9495C0A787DADF077EF /* Sources */,
+				FA37D93AFE3F3D494C02723488B596B3 /* Frameworks */,
+				061A7FD7F5676F52B068650AF4506328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HexColors;
+			productName = HexColors;
+			productReference = 7CA25AA52385B8DA33AC61E2A668841F /* HexColors.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B50283C86225FEF5EC003DD079A76F6D /* SwiftHEXColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D930D89873DD73792C46451385B98D8 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */;
+			buildPhases = (
+				E8B19FE4F0FFCA5D74F2F04EB5C06838 /* Headers */,
+				E7EBA15FE518B8C19A69EA0937865EC8 /* Sources */,
+				DC2C25C2F236363C1AE357C3E1B44901 /* Frameworks */,
+				DDD535B677701393D81BE349FA80E2E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftHEXColors;
+			productName = SwiftHEXColors;
+			productReference = 36708791CC11C9CE3D3AC21F05280ABD /* SwiftHEXColors.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7A242603ED7333794F270586FA2B22D /* IQKeyboardManagerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25970A9A561EEA688318021EDCC52F1 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
+			buildPhases = (
+				97436C0F539C1101021EF13686C812F8 /* Headers */,
+				7AF42F31974C4307C51BF0E052140CED /* Sources */,
+				4E391EAFB429199C7F20BD72A8A1776B /* Frameworks */,
+				C2B4BDC5CF6CF24DD3353DB659D852CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = 2A3C30FBB6A93A84AB46168374C1E0E5 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E76458C58C9140B6A16D60547E68E80C /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427F0F003A1AD80AE00155AFCDEFAC20 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				A6A607506FEAAC7C41268D3E5CF4E5FE /* Headers */,
+				86CCC4A4A8864DB1BD696381A2D523B0 /* Sources */,
+				6E8AF668A2161F7D6F680F721DB65D2D /* Frameworks */,
+				3DDB7E21141D7764AE4658D5B6AFF8C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5CC03BD50096351EE95B047B75C5640E /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F437DF4A7F22FDECCDF603E76D5454DF /* JJFloatingActionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A881A965438471BCEF85572654F6853 /* Build configuration list for PBXNativeTarget "JJFloatingActionButton" */;
+			buildPhases = (
+				1C5FB926ADB24825E8DEF03A1B17F539 /* Headers */,
+				6662628552C2B0E6E8636CEDD64302DF /* Sources */,
+				6F60DD7F255194DB9F6E471740525E32 /* Frameworks */,
+				3A89AEF5F030D1D7B38DC369D5D11FD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJFloatingActionButton;
+			productName = JJFloatingActionButton;
+			productReference = EB2A6AD688F112A4A5A356FE64F4435E /* JJFloatingActionButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD4A1F3241689B2EDF6B986145988514 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A25233046BB743967A43CC319273AA /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				06702C605C0520F70F08C18CE225422E /* Headers */,
+				10F010A1E24194D16C5005EF8E214B8C /* Sources */,
+				0DD68F9A3329B30C9055AAFA77BADE59 /* Frameworks */,
+				921EE61AB66777416C1F8F62687044B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = EE6393C71A78EA339E15F158D2309B11 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					A3C484FBA9936499839FE340CB064888 = {
+						LastSwiftMigration = 1010;
+					};
+					B50283C86225FEF5EC003DD079A76F6D = {
+						LastSwiftMigration = 1010;
+					};
+					F437DF4A7F22FDECCDF603E76D5454DF = {
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8192A39AE9C6A5E987903B0807B171C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05B9852E4B188EF4EC93B1E3F0712B2E /* ActionSheetPicker-3.0 */,
+				E76458C58C9140B6A16D60547E68E80C /* Alamofire */,
+				24384DEF2FEB0D810C36BCC3D8BBCDFB /* CountryPickerView */,
+				35A9905CB1F800238DCF11CDEC10C361 /* CountryPickerView-CountryPickerView */,
+				B14184B2B5F039628B81730E798E9E97 /* HexColors */,
+				C7A242603ED7333794F270586FA2B22D /* IQKeyboardManagerSwift */,
+				F437DF4A7F22FDECCDF603E76D5454DF /* JJFloatingActionButton */,
+				6BC2FD8B82E16BD00C33C2A52A30EB76 /* Pods-Faveo Helpdesk Community */,
+				A3C484FBA9936499839FE340CB064888 /* RMessage */,
+				4F2B7C925C7E1D66AE0C552B312137B6 /* SVProgressHUD */,
+				B50283C86225FEF5EC003DD079A76F6D /* SwiftHEXColors */,
+				FD4A1F3241689B2EDF6B986145988514 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		061A7FD7F5676F52B068650AF4506328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A89AEF5F030D1D7B38DC369D5D11FD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDB7E21141D7764AE4658D5B6AFF8C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5087E7F7F15CCE848382FEF4A0A3C777 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73AE6CEBEC30C9BAA0FB64A4C786F23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C3BC6799CD246C7B5C13034DAB359C7 /* CountryPickerView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D37C867572F5B1B3F5FFD9D24876772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED142AE352A9DB175F27D2804A35863 /* Data in Resources */,
+				823A6F0A7CF829BE73E3B4EEF1EB74F9 /* Images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921EE61AB66777416C1F8F62687044B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C302C1CC03C246E3DB8B0BDE26F5FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60FE89C6E1AEBFB88B9DE263247981D /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B4BDC5CF6CF24DD3353DB659D852CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8565110EC39908F1DD099DABF5734E92 /* IQKeyboardManager.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C840F5AC3DAA4810A6AFAEB5A2576000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80DC158438A95F4789D062FF81D3383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027B4E285A75CA07624E69554D9A8E48 /* RMessage.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD535B677701393D81BE349FA80E2E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10F010A1E24194D16C5005EF8E214B8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A48BFEB19BCCA2C38583908874935521 /* SwiftyJSON-dummy.m in Sources */,
+				275AFFAECF5AC6104BFA94938935F411 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201E10E7B75D4F9369910F865081137C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C2B5AA876F97F15016A47276E9FC2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E518C43BF23616CF92DC794F06441D1C /* CountryPickerView-dummy.m in Sources */,
+				85BCE05AEFFFE7A420FF06BE065E9F21 /* CountryPickerView.swift in Sources */,
+				708A4C2927C53AD594C3140375C3ADE3 /* CountryPickerView.xib in Sources */,
+				E281A9C37410B82821C2415639903F67 /* CountryPickerViewController.swift in Sources */,
+				42F884AF42CD068C62204A85BA32B50B /* Delegate+DataSource.swift in Sources */,
+				E640E0C60C6CD41854EDE043914A4F77 /* Extensions.swift in Sources */,
+				4AA963A5D72B8238FDBE10B32CE7BA49 /* NibView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30353817D2CCC9495C0A787DADF077EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B476A13A4252E9A25A47C457C52AD8 /* HexColors-dummy.m in Sources */,
+				89903D0475FDFAB0CEAA0B79E6CAECC6 /* HexColors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7FFB982F0051A523B49D4585B3471E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA0045270F2FE8718E7366D1CFC01B2 /* AbstractActionSheetPicker.m in Sources */,
+				F131FE90B8E873F55FF192FF10A19076 /* ActionSheetCustomPicker.m in Sources */,
+				10D4EFE38FFFE3C7F222D35B62E728ED /* ActionSheetDatePicker.m in Sources */,
+				F61761312E0D741D61DC09E02BCA6DE9 /* ActionSheetDistancePicker.m in Sources */,
+				9E1EA37140FB4DB5589924D069E0F040 /* ActionSheetLocalePicker.m in Sources */,
+				33FF9B2BEC508A588DCB31462B7306A0 /* ActionSheetMultipleStringPicker.m in Sources */,
+				DA35E172CFC080BBAB284AF2790DB7F2 /* ActionSheetPicker-3.0-dummy.m in Sources */,
+				403C5D9AAD792C6FAFFE3961911E5162 /* ActionSheetStringPicker.m in Sources */,
+				6DE8C977E77B7A9F692376E009B82254 /* DistancePickerView.m in Sources */,
+				70052EBBCE4D6B524FD4558E1C2E1696 /* SWActionSheet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6662628552C2B0E6E8636CEDD64302DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A313D3544723FFC12288BA8F1D583061 /* AnimationConfiguration.swift in Sources */,
+				FE1C5F1C7E7898B9EBBF27D4D9E6B1F1 /* JJActionItem.swift in Sources */,
+				5F3A5E7DE89A7A42FBB40504F18D50FA /* JJActionItemTitlePosition.swift in Sources */,
+				A2391C310F6639666EC628DFA18F685D /* JJCircleView.swift in Sources */,
+				7CA03C2740281AEB78A095DCF2DEE1DB /* JJFloatingActionButton+Animation.swift in Sources */,
+				F2C849A742D85678865AFB1CA22EDBAB /* JJFloatingActionButton+Placement.swift in Sources */,
+				62E3677D73196864E55225865619A14E /* JJFloatingActionButton-dummy.m in Sources */,
+				C27AFAB0227E6F4743B451C84FBA7BAD /* JJFloatingActionButton.swift in Sources */,
+				B0EC38A7E149464894982A3669FFAE33 /* JJFloatingActionButtonDelegate.swift in Sources */,
+				410F5CD1CECF649AFEBB511577273D81 /* JJFloatingActionButtonState.swift in Sources */,
+				964EAAEC44DACD268E4DAD5DA94023C9 /* LayerProperties.swift in Sources */,
+				D2E2217665477783FF4E56BDC193331B /* Styles.swift in Sources */,
+				DEDE5F3C4805707EC1CC0A0FE8128A08 /* UIColor+JJFloatingActionButton.swift in Sources */,
+				2727336FAB0519AC37BF00B315B758D7 /* UIView+JJFloatingActionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726D297D825F858482FEF5FCE4E29B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16DC9809DA7C9E21AD1EA3A3A6E742C /* Pods-Faveo Helpdesk Community-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AF42F31974C4307C51BF0E052140CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6FFBC4C75FFBB8A4B2B15C1075D612 /* IQBarButtonItem.swift in Sources */,
+				747B4DDAE8233BAB2D08007FF8291F3E /* IQInvocation.swift in Sources */,
+				662C6BD811016FFE039C9E0A9276770A /* IQKeyboardManager.swift in Sources */,
+				F9A27CECF95AB7E95D44EF96BC254B8C /* IQKeyboardManagerConstants.swift in Sources */,
+				283C2DC1C4AAED94E46374CD32F8EFFB /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				A8D2738D9F62207A007481DBFAF8933D /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				F0F07CCE8B31D36352826D7586989DAF /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				8080ED10057840D693568F5CBBE7F9F3 /* IQNSArray+Sort.swift in Sources */,
+				79B9BAB96C38BDC5AED02BA1FCFADCB5 /* IQPreviousNextView.swift in Sources */,
+				F7A960B88C70FC80EAC484066A49B48B /* IQTextView.swift in Sources */,
+				4512E733A416EDBBC16D47AA78EE283A /* IQTitleBarButtonItem.swift in Sources */,
+				4D1790DE32542049195AD0735144B510 /* IQToolbar.swift in Sources */,
+				8E90C1069C9A6D826A6FB51706738876 /* IQUIScrollView+Additions.swift in Sources */,
+				D57EBF218A587B277DD81C4A75EDC656 /* IQUITextFieldView+Additions.swift in Sources */,
+				AF5D89B11CF16050E2ED64E10353C53C /* IQUIView+Hierarchy.swift in Sources */,
+				2A42A2EBBEC263B1444869F14260A58F /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				8227B82188AB7C745489959AE6C45F63 /* IQUIViewController+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86CCC4A4A8864DB1BD696381A2D523B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DDEEA91D0D552EA97C246C730D78824 /* AFError.swift in Sources */,
+				71C8993DD60E299326A97D5329C3CD71 /* Alamofire-dummy.m in Sources */,
+				6E234A862ED158238D3CB582143270EF /* Alamofire.swift in Sources */,
+				39E46DB3A3EA5EB4427CC89A9FBE6127 /* DispatchQueue+Alamofire.swift in Sources */,
+				40E83A2C4472A974BA66E787E66ACB40 /* MultipartFormData.swift in Sources */,
+				FD9ACD2FBE5243A91558B907BC425CF1 /* NetworkReachabilityManager.swift in Sources */,
+				E168E51972842469FAAD625F11D9D781 /* Notifications.swift in Sources */,
+				0BF96C90FD9427084AEEE5A80777D315 /* ParameterEncoding.swift in Sources */,
+				7EC61770466C1FF57B5A2C82046284B7 /* Request.swift in Sources */,
+				72EDF21BFA7D0C52E40EAB4354F8AF44 /* Response.swift in Sources */,
+				D04270C0C61007A8BB065F92A680D6DE /* ResponseSerialization.swift in Sources */,
+				CAFDEC2BE2BD6C00E8E71FED4BBFF080 /* Result.swift in Sources */,
+				4D4A61EC172DB39FCF11C0829DF6913C /* ServerTrustPolicy.swift in Sources */,
+				5FAE6243000CCAF381D57109484B1396 /* SessionDelegate.swift in Sources */,
+				DA3B50AF86C7F0AB8AA95BC126F0D070 /* SessionManager.swift in Sources */,
+				31E097613F217BBF4E774D235917E165 /* TaskDelegate.swift in Sources */,
+				66777B3D392D4AF8CBAE17A9C5D13C2F /* Timeline.swift in Sources */,
+				918D55F16814247D5D0D74FC75B48FBE /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DD657C6923BB6B34CCCB8B3D703691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9176849D88AF9C7F9758B7525FC9BCD0 /* RMAnimationOptions.swift in Sources */,
+				A3CBD8A0CE4DAA31741E13C7E51E5D0B /* RMAnimator.swift in Sources */,
+				8CAB6568C3018A267FBB9545865267FB /* RMController.swift in Sources */,
+				F949EC06384F9010F8B9AC5E502E4BC2 /* RMControllerDelegate.swift in Sources */,
+				64DF89CDC3CD38DBABC333570D0D4B24 /* RMessage+Components.swift in Sources */,
+				BBBF67E6CE0CEDD0B74D4CEE3EE5DDDB /* RMessage+Design.swift in Sources */,
+				6574CF2D0F4E36A96235F97FF4022009 /* RMessage-dummy.m in Sources */,
+				B26C88C99938E375DC2ED345BFD30E5E /* RMessage.swift in Sources */,
+				9BC1B4CFBFBC6D3CB34A3F45CF5C306D /* RMessageSpec.swift in Sources */,
+				727E069CF7C9978AFF78B0DE44E95743 /* RMPresenter+TouchCompletion.swift in Sources */,
+				A1538ABA5165DF9F81129AA24924B22E /* RMPresenter.swift in Sources */,
+				49EB6183F25DAA5F9DD62AEC0A7EAF8B /* RMPresenterDelegate.swift in Sources */,
+				10788B191688E17CB273945B5BEB513D /* RMPresenterOptions.swift in Sources */,
+				52B7A0E751A7EF2D1B065EB4A0EA942A /* RMShowOperation.swift in Sources */,
+				AAEDC46EF5C58D5DBB8A366EBD885491 /* SlideAnimator.swift in Sources */,
+				C22092D0BCACC1EF93D912FF246DDFF3 /* UIWindow+ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB95E6D1AAE196552D41A468B4F4663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDF2BD61836D98A6B6A18260F96D380 /* SVIndefiniteAnimatedView.m in Sources */,
+				0A2F2DB32720E7F97CEFB383ACD3C183 /* SVProgressAnimatedView.m in Sources */,
+				D3CCB1238568C695EB53ED17E05931B7 /* SVProgressHUD-dummy.m in Sources */,
+				5F98DA55C2B6E424A64D29EA61A76443 /* SVProgressHUD.m in Sources */,
+				2440D460B9156892F3D0624F0DCA7A48 /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7EBA15FE518B8C19A69EA0937865EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3BDD010AF6EA9B3C193B741535F4B66 /* SwiftHEXColors-dummy.m in Sources */,
+				0386CD90DAA1FCB7CA61CE9065A3F235 /* SwiftHEXColors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01AAE2967C662FF27785AB8582ADF10C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHEXColors;
+			target = B50283C86225FEF5EC003DD079A76F6D /* SwiftHEXColors */;
+			targetProxy = 4F812AECCA5AE8E29217128F493E3389 /* PBXContainerItemProxy */;
+		};
+		03F2416A4DB9FD0ACFF538A9AEAF8109 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CountryPickerView;
+			target = 24384DEF2FEB0D810C36BCC3D8BBCDFB /* CountryPickerView */;
+			targetProxy = 96AFBCFF9C88314ED3177DC4D28E8772 /* PBXContainerItemProxy */;
+		};
+		04F5F8A5E2F590BC04D0AB8ECAE5F4A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RMessage;
+			target = A3C484FBA9936499839FE340CB064888 /* RMessage */;
+			targetProxy = 2C3AB1B9F94AE1A83CF68D28CEF9CAE9 /* PBXContainerItemProxy */;
+		};
+		0FCCDBDAEDFD77C20CC299B439060F3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HexColors;
+			target = B14184B2B5F039628B81730E798E9E97 /* HexColors */;
+			targetProxy = 8B2922E27980870FDC29F5792DB07DCE /* PBXContainerItemProxy */;
+		};
+		0FEDDE56727E194E758435800AB4AB45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 4F2B7C925C7E1D66AE0C552B312137B6 /* SVProgressHUD */;
+			targetProxy = 7492B4FE3C2EC00C9418AF26108E4AA2 /* PBXContainerItemProxy */;
+		};
+		1F2E2BE3EB52A4D1E1A796A4BF2EB017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JJFloatingActionButton;
+			target = F437DF4A7F22FDECCDF603E76D5454DF /* JJFloatingActionButton */;
+			targetProxy = D4F07A6DEF5C7AC560B466F0D00B9150 /* PBXContainerItemProxy */;
+		};
+		3DCEC36555E5D41541F41B8EA15A68D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CountryPickerView-CountryPickerView";
+			target = 35A9905CB1F800238DCF11CDEC10C361 /* CountryPickerView-CountryPickerView */;
+			targetProxy = 76F07AA0792F41AC34B918C0CD77571C /* PBXContainerItemProxy */;
+		};
+		437731ED67E4E8BD0585BBF4559DFF0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = FD4A1F3241689B2EDF6B986145988514 /* SwiftyJSON */;
+			targetProxy = 8EF6E59DBFD1C915A226BBA50FF8329F /* PBXContainerItemProxy */;
+		};
+		4D01C881CE24AA755D52A04842FCF636 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = E76458C58C9140B6A16D60547E68E80C /* Alamofire */;
+			targetProxy = 1B0163012A9180DACE00623F9D82F676 /* PBXContainerItemProxy */;
+		};
+		A961B46A15A70C28D50D3DBF8270FB60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ActionSheetPicker-3.0";
+			target = 05B9852E4B188EF4EC93B1E3F0712B2E /* ActionSheetPicker-3.0 */;
+			targetProxy = F071E13003CDC4EDADD600E832DDD797 /* PBXContainerItemProxy */;
+		};
+		BC537333340B4A858973014918D31CE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HexColors;
+			target = B14184B2B5F039628B81730E798E9E97 /* HexColors */;
+			targetProxy = F803F2269B688D0C361622C8ADA9338B /* PBXContainerItemProxy */;
+		};
+		DF591B604D1FD508A2B5FAB71AECB80F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = C7A242603ED7333794F270586FA2B22D /* IQKeyboardManagerSwift */;
+			targetProxy = 6E74CCE70BC34531F9135DD3F4339C00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015CF1DA08B81990170D4CFA9EBA7754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80F9C06178B07BE78C3863AC97F0C5F0 /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHEXColors;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0CE3AF37574381AF901BDA40A1F17C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1549A26D9E3C2374E171EAFDE4636454 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E4083AFB012A083F26F5B2742100256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D229A8991E280A8AFFD2ACF54F8EBE4 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29461B23402771DC36BB84FE023D99B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1549A26D9E3C2374E171EAFDE4636454 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2F068AC6CE1A2563142E98D903014B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B40086A6119BCA6222E0A528934B861B /* CountryPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CountryPickerView/CountryPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CountryPickerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CountryPickerView/CountryPickerView.modulemap";
+				PRODUCT_MODULE_NAME = CountryPickerView;
+				PRODUCT_NAME = CountryPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BF04375EC0243C7D5C3BDFAFAD6F003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B40086A6119BCA6222E0A528934B861B /* CountryPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CountryPickerView/CountryPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CountryPickerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CountryPickerView/CountryPickerView.modulemap";
+				PRODUCT_MODULE_NAME = CountryPickerView;
+				PRODUCT_NAME = CountryPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A08D008B4A3BCC7BEC411E3E1690C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CC20A980565B1577F5390264FFF3258 /* ActionSheetPicker-3.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActionSheetPicker-3.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0.modulemap";
+				PRODUCT_MODULE_NAME = ActionSheetPicker_3_0;
+				PRODUCT_NAME = ActionSheetPicker_3_0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6599D25C2323B09FCCC98D0A4DAE044E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CAA1886313B096EE6D596C376CB43AB /* JJFloatingActionButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JJFloatingActionButton/JJFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JJFloatingActionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JJFloatingActionButton/JJFloatingActionButton.modulemap";
+				PRODUCT_MODULE_NAME = JJFloatingActionButton;
+				PRODUCT_NAME = JJFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		701E15E20A5182B8D7DA676EF2B50FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D229A8991E280A8AFFD2ACF54F8EBE4 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		710F4529A0ACF587DB8C8F0C05CEA0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80F9C06178B07BE78C3863AC97F0C5F0 /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHEXColors;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		782F661BEC50F5BD932B5184B8F358F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CC20A980565B1577F5390264FFF3258 /* ActionSheetPicker-3.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActionSheetPicker-3.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0.modulemap";
+				PRODUCT_MODULE_NAME = ActionSheetPicker_3_0;
+				PRODUCT_NAME = ActionSheetPicker_3_0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		856F28A45D2211839DD1858B5311F0DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C257EFA250BB2146DB82B3CCA5337EC /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		914BA4586ED7783FB98C9BE2EF06CEDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15747293382B5ACB45612E6EB59C2F33 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9FBCF51F01C92F4C52B1569B6EE2FC33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 768F1A01D508F5321921D1A796AB9FA0 /* Pods-Faveo Helpdesk Community.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Faveo Helpdesk Community/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Faveo Helpdesk Community/Pods-Faveo Helpdesk Community.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ACC45E3E411B81600ABD3261A64318DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BBCE2064000368140B3F52C944AD65C /* RMessage.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RMessage/RMessage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMessage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RMessage/RMessage.modulemap";
+				PRODUCT_MODULE_NAME = RMessage;
+				PRODUCT_NAME = RMessage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BA5C9241281F5608007800E46573DEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C257EFA250BB2146DB82B3CCA5337EC /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5A4B95553A06BE9E072C3B6990DBE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCABB4488C85C3446FABD4688AF92AA /* HexColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HexColors/HexColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HexColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HexColors/HexColors.modulemap";
+				PRODUCT_MODULE_NAME = HexColors;
+				PRODUCT_NAME = HexColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D87C14E82F7BCFB18798528D536AC9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 342DCE40DF1B898615504A656F5313DC /* Pods-Faveo Helpdesk Community.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Faveo Helpdesk Community/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Faveo Helpdesk Community/Pods-Faveo Helpdesk Community.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD692CC1EFD690AC8AAB2B49D2D7B562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCABB4488C85C3446FABD4688AF92AA /* HexColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HexColors/HexColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HexColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HexColors/HexColors.modulemap";
+				PRODUCT_MODULE_NAME = HexColors;
+				PRODUCT_NAME = HexColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EAC58C9FA284A4A5734029591F3E9EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BBCE2064000368140B3F52C944AD65C /* RMessage.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RMessage/RMessage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMessage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RMessage/RMessage.modulemap";
+				PRODUCT_MODULE_NAME = RMessage;
+				PRODUCT_NAME = RMessage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EBAAAA2043BDDD9B01B9A5C62D96049C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B40086A6119BCA6222E0A528934B861B /* CountryPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CountryPickerView";
+				INFOPLIST_FILE = "Target Support Files/CountryPickerView/ResourceBundle-CountryPickerView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = CountryPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F06504BE2F18A3417985807A56647DDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CAA1886313B096EE6D596C376CB43AB /* JJFloatingActionButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JJFloatingActionButton/JJFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JJFloatingActionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JJFloatingActionButton/JJFloatingActionButton.modulemap";
+				PRODUCT_MODULE_NAME = JJFloatingActionButton;
+				PRODUCT_NAME = JJFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F43EF96CBFAF806669E89B1C52D6D158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15747293382B5ACB45612E6EB59C2F33 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA08B860336C9B22681F17916B42EA4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B40086A6119BCA6222E0A528934B861B /* CountryPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CountryPickerView";
+				INFOPLIST_FILE = "Target Support Files/CountryPickerView/ResourceBundle-CountryPickerView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = CountryPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		254FFB9B50CE5A7DAE9ADCEBBCB69863 /* Build configuration list for PBXNativeTarget "RMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC45E3E411B81600ABD3261A64318DC /* Debug */,
+				EAC58C9FA284A4A5734029591F3E9EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */,
+				B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D930D89873DD73792C46451385B98D8 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015CF1DA08B81990170D4CFA9EBA7754 /* Debug */,
+				710F4529A0ACF587DB8C8F0C05CEA0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427F0F003A1AD80AE00155AFCDEFAC20 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CE3AF37574381AF901BDA40A1F17C0E /* Debug */,
+				29461B23402771DC36BB84FE023D99B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8B03CA5F1D78DC3D14ACA339E71435 /* Build configuration list for PBXNativeTarget "Pods-Faveo Helpdesk Community" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87C14E82F7BCFB18798528D536AC9EC /* Debug */,
+				9FBCF51F01C92F4C52B1569B6EE2FC33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A6368C55CB537D521EAC42100B4897 /* Build configuration list for PBXNativeTarget "CountryPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F068AC6CE1A2563142E98D903014B0F /* Debug */,
+				3BF04375EC0243C7D5C3BDFAFAD6F003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95BBF033C479330A75060CB3ACA32D4B /* Build configuration list for PBXNativeTarget "CountryPickerView-CountryPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA08B860336C9B22681F17916B42EA4F /* Debug */,
+				EBAAAA2043BDDD9B01B9A5C62D96049C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A881A965438471BCEF85572654F6853 /* Build configuration list for PBXNativeTarget "JJFloatingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6599D25C2323B09FCCC98D0A4DAE044E /* Debug */,
+				F06504BE2F18A3417985807A56647DDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B834EE00D33BF8584CE5177AF20C74F5 /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A08D008B4A3BCC7BEC411E3E1690C6B /* Debug */,
+				782F661BEC50F5BD932B5184B8F358F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35CB78590E8507BA19C3A3FA4F7A580 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4083AFB012A083F26F5B2742100256 /* Debug */,
+				701E15E20A5182B8D7DA676EF2B50FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25970A9A561EEA688318021EDCC52F1 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA5C9241281F5608007800E46573DEDF /* Debug */,
+				856F28A45D2211839DD1858B5311F0DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A25233046BB743967A43CC319273AA /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				914BA4586ED7783FB98C9BE2EF06CEDC /* Debug */,
+				F43EF96CBFAF806669E89B1C52D6D158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCDEAEF8AB948A101D51A253045AB1B /* Build configuration list for PBXNativeTarget "HexColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD692CC1EFD690AC8AAB2B49D2D7B562 /* Debug */,
+				D5A4B95553A06BE9E072C3B6990DBE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

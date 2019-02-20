@@ -1,0 +1,52 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - Alamofire (4.7.3)
+  - CountryPickerView (2.2.0)
+  - HexColors (6.0.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - JJFloatingActionButton (0.10.0)
+  - RMessage (3.0.1):
+    - HexColors (~> 6.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftHEXColors (1.1.2)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire
+  - CountryPickerView
+  - IQKeyboardManagerSwift
+  - JJFloatingActionButton
+  - RMessage
+  - SVProgressHUD
+  - SwiftHEXColors
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - Alamofire
+    - CountryPickerView
+    - HexColors
+    - IQKeyboardManagerSwift
+    - JJFloatingActionButton
+    - RMessage
+    - SVProgressHUD
+    - SwiftHEXColors
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CountryPickerView: 77177af9744802d0a61391508b37e0a08f630871
+  HexColors: f8c66339541a74bb08905bfe7cd4f8cc85e9e173
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  JJFloatingActionButton: 7e9e924d0819ebeb6a566dade9d5dbed63ff8add
+  RMessage: e8cd863fca312006ead6d6c2255b45fa9b582fb0
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftHEXColors: 7f9f7e6bdce888d821e11749279733e5ddff5f51
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 8e3bfa8d552cbb1c8a2ae67911dfca1362c852ae
+
+COCOAPODS: 1.5.3

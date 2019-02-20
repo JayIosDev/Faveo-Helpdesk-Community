@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061AF1D121F03CC200FF59F9 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF1D021F03CC200FF59F9 /* UsersListViewController.swift */; };
+		061AF1D321F03CE800FF59F9 /* UsersDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF1D221F03CE800FF59F9 /* UsersDetailsViewController.swift */; };
+		0632911621E7734E00CD7C6E /* TicketDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632911521E7734E00CD7C6E /* TicketDetailsViewController.swift */; };
+		0632911821E7736F00CD7C6E /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632911721E7736F00CD7C6E /* ConversationViewController.swift */; };
+		0639E70621E0BE5700B4A8B6 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0639E70521E0BE5700B4A8B6 /* WebServices.swift */; };
+		0639E70821E0BFD800B4A8B6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0639E70721E0BFD800B4A8B6 /* Utils.swift */; };
+		065C317F21F045FE00AC9E43 /* ClientListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065C317E21F045FE00AC9E43 /* ClientListTableViewCell.xib */; };
+		065C318121F047E000AC9E43 /* ClientListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C318021F047E000AC9E43 /* ClientListTableViewCell.swift */; };
+		0674BC2421EF3FD800AAA200 /* ImageView+LettersExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0674BC2321EF3FD800AAA200 /* ImageView+LettersExtension.swift */; };
+		0675363421E8822D00457032 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0675363321E8822D00457032 /* DetailsViewController.swift */; };
+		0675363621E88DAB00457032 /* EditTicketDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0675363521E88DAB00457032 /* EditTicketDetails.swift */; };
+		06865D9421F2EC2D00F95722 /* ConversationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06865D9321F2EC2C00F95722 /* ConversationTableViewCell.xib */; };
+		06865D9621F2EDCB00F95722 /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06865D9521F2EDCB00F95722 /* ConversationTableViewCell.swift */; };
+		068CCF2E21F355F4003D8D9F /* UsersAssociatedTickets.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068CCF2D21F355F4003D8D9F /* UsersAssociatedTickets.xib */; };
+		068CCF3021F35659003D8D9F /* UsersAssociatedTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CCF2F21F35659003D8D9F /* UsersAssociatedTickets.swift */; };
+		069E260A21F99C6A009A7E7E /* ReplyTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E260921F99C6A009A7E7E /* ReplyTicket.swift */; };
+		069E260C21F99C7C009A7E7E /* InternalNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E260B21F99C7C009A7E7E /* InternalNote.swift */; };
+		06AECB9621E09AEE002A8F61 /* SideMenuBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AECB9521E09AEE002A8F61 /* SideMenuBarVC.swift */; };
+		06AECB9821E09B0A002A8F61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AECB9721E09B0A002A8F61 /* LoginViewController.swift */; };
+		06AECB9A21E09B20002A8F61 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AECB9921E09B20002A8F61 /* InboxViewController.swift */; };
+		06AECB9C21E0A22C002A8F61 /* SampleNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AECB9B21E0A22C002A8F61 /* SampleNavigation.swift */; };
+		06BC559721E1D82800B88717 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC559521E1D82800B88717 /* TicketTableViewCell.swift */; };
+		06BC559A21E1D85A00B88717 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BC559921E1D85A00B88717 /* TicketTableViewCell.xib */; };
+		06BC559C21E1FD2000B88717 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC559B21E1FD2000B88717 /* GlobalVariables.swift */; };
+		06C376A821F7146800132A61 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C376A721F7146700132A61 /* LoadingTableViewCell.xib */; };
+		06C376AC21F714C700132A61 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C376AB21F714C700132A61 /* LoadingTableViewCell.swift */; };
+		06E2D02621EDE4100067B7E9 /* MyTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2D02521EDE4100067B7E9 /* MyTicketsViewController.swift */; };
+		06E2D02821EDE43F0067B7E9 /* UnAssignedTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2D02721EDE43F0067B7E9 /* UnAssignedTickets.swift */; };
+		06E2D02A21EDE5B50067B7E9 /* ClosedTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2D02921EDE5B50067B7E9 /* ClosedTickets.swift */; };
+		06E2D02C21EDE5D00067B7E9 /* TrashTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2D02B21EDE5D00067B7E9 /* TrashTickets.swift */; };
+		06E2D02E21EDE9C90067B7E9 /* CreateTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2D02D21EDE9C90067B7E9 /* CreateTicketViewController.swift */; };
+		06E2D53121EF5AA300E0BC00 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2D53021EF5AA300E0BC00 /* AboutUsViewController.swift */; };
+		06E5E65C21E097E800D6A000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E5E65B21E097E800D6A000 /* AppDelegate.swift */; };
+		06E5E65E21E097E800D6A000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E5E65D21E097E800D6A000 /* ViewController.swift */; };
+		06E5E66121E097E800D6A000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E5E65F21E097E800D6A000 /* Main.storyboard */; };
+		06E5E66321E097EA00D6A000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E5E66221E097EA00D6A000 /* Assets.xcassets */; };
+		06E5E66621E097EA00D6A000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E5E66421E097EA00D6A000 /* LaunchScreen.storyboard */; };
+		06E5E67121E097EA00D6A000 /* Faveo_Helpdesk_CommunityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E5E67021E097EA00D6A000 /* Faveo_Helpdesk_CommunityTests.swift */; };
+		06E5E67C21E097EA00D6A000 /* Faveo_Helpdesk_CommunityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E5E67B21E097EA00D6A000 /* Faveo_Helpdesk_CommunityUITests.swift */; };
+		06E5E68C21E0981D00D6A000 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E5E68B21E0981C00D6A000 /* SWRevealViewController.m */; };
+		7DC78374DE122843F804BA38 /* Pods_Faveo_Helpdesk_Community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A522BC8E5E032B8B1E83F5 /* Pods_Faveo_Helpdesk_Community.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06E5E66D21E097EA00D6A000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06E5E65021E097E800D6A000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06E5E65721E097E800D6A000;
+			remoteInfo = "Faveo Helpdesk Community";
+		};
+		06E5E67821E097EA00D6A000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06E5E65021E097E800D6A000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06E5E65721E097E800D6A000;
+			remoteInfo = "Faveo Helpdesk Community";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		061AF1D021F03CC200FF59F9 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		061AF1D221F03CE800FF59F9 /* UsersDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDetailsViewController.swift; sourceTree = "<group>"; };
+		062897E7220075F3008857D1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0632911521E7734E00CD7C6E /* TicketDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailsViewController.swift; sourceTree = "<group>"; };
+		0632911721E7736F00CD7C6E /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		0639E70521E0BE5700B4A8B6 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		0639E70721E0BFD800B4A8B6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		065C317E21F045FE00AC9E43 /* ClientListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientListTableViewCell.xib; sourceTree = "<group>"; };
+		065C318021F047E000AC9E43 /* ClientListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListTableViewCell.swift; sourceTree = "<group>"; };
+		0674BC2321EF3FD800AAA200 /* ImageView+LettersExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+LettersExtension.swift"; sourceTree = "<group>"; };
+		0675363321E8822D00457032 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		0675363521E88DAB00457032 /* EditTicketDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTicketDetails.swift; sourceTree = "<group>"; };
+		06865D9321F2EC2C00F95722 /* ConversationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConversationTableViewCell.xib; sourceTree = "<group>"; };
+		06865D9521F2EDCB00F95722 /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		068CCF2D21F355F4003D8D9F /* UsersAssociatedTickets.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsersAssociatedTickets.xib; sourceTree = "<group>"; };
+		068CCF2F21F35659003D8D9F /* UsersAssociatedTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAssociatedTickets.swift; sourceTree = "<group>"; };
+		069E260921F99C6A009A7E7E /* ReplyTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyTicket.swift; sourceTree = "<group>"; };
+		069E260B21F99C7C009A7E7E /* InternalNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalNote.swift; sourceTree = "<group>"; };
+		06AECB9521E09AEE002A8F61 /* SideMenuBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuBarVC.swift; sourceTree = "<group>"; };
+		06AECB9721E09B0A002A8F61 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		06AECB9921E09B20002A8F61 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		06AECB9B21E0A22C002A8F61 /* SampleNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNavigation.swift; sourceTree = "<group>"; };
+		06BC559521E1D82800B88717 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		06BC559921E1D85A00B88717 /* TicketTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TicketTableViewCell.xib; sourceTree = "<group>"; };
+		06BC559B21E1FD2000B88717 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		06C376A721F7146700132A61 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
+		06C376AB21F714C700132A61 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
+		06E2D02521EDE4100067B7E9 /* MyTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsViewController.swift; sourceTree = "<group>"; };
+		06E2D02721EDE43F0067B7E9 /* UnAssignedTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnAssignedTickets.swift; sourceTree = "<group>"; };
+		06E2D02921EDE5B50067B7E9 /* ClosedTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedTickets.swift; sourceTree = "<group>"; };
+		06E2D02B21EDE5D00067B7E9 /* TrashTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashTickets.swift; sourceTree = "<group>"; };
+		06E2D02D21EDE9C90067B7E9 /* CreateTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketViewController.swift; sourceTree = "<group>"; };
+		06E2D53021EF5AA300E0BC00 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		06E5E65821E097E800D6A000 /* Faveo Helpdesk Community.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Faveo Helpdesk Community.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06E5E65B21E097E800D6A000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06E5E65D21E097E800D6A000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06E5E66021E097E800D6A000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06E5E66221E097EA00D6A000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06E5E66521E097EA00D6A000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06E5E66721E097EA00D6A000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06E5E66C21E097EA00D6A000 /* Faveo Helpdesk CommunityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Faveo Helpdesk CommunityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06E5E67021E097EA00D6A000 /* Faveo_Helpdesk_CommunityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faveo_Helpdesk_CommunityTests.swift; sourceTree = "<group>"; };
+		06E5E67221E097EA00D6A000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06E5E67721E097EA00D6A000 /* Faveo Helpdesk CommunityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Faveo Helpdesk CommunityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06E5E67B21E097EA00D6A000 /* Faveo_Helpdesk_CommunityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faveo_Helpdesk_CommunityUITests.swift; sourceTree = "<group>"; };
+		06E5E67D21E097EA00D6A000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06E5E68921E0981B00D6A000 /* Faveo Helpdesk Community-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Faveo Helpdesk Community-Bridging-Header.h"; sourceTree = "<group>"; };
+		06E5E68A21E0981C00D6A000 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		06E5E68B21E0981C00D6A000 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8F2A505D1ACE45CA74CF64E1 /* Pods-Faveo Helpdesk Community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faveo Helpdesk Community.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faveo Helpdesk Community/Pods-Faveo Helpdesk Community.release.xcconfig"; sourceTree = "<group>"; };
+		95A522BC8E5E032B8B1E83F5 /* Pods_Faveo_Helpdesk_Community.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faveo_Helpdesk_Community.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44415DF56673476FB00C714 /* Pods-Faveo Helpdesk Community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faveo Helpdesk Community.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faveo Helpdesk Community/Pods-Faveo Helpdesk Community.debug.xcconfig"; sourceTree = "<group>"; };
+		CD367F5B7064695612882A72 /* Pods_Faveo_Helpdesk_CommunityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faveo_Helpdesk_CommunityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C139363FAA68FB27C75AE1 /* Pods_Faveo_Helpdesk_CommunityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faveo_Helpdesk_CommunityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06E5E65521E097E800D6A000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC78374DE122843F804BA38 /* Pods_Faveo_Helpdesk_Community.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06E5E66921E097EA00D6A000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06E5E67421E097EA00D6A000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0639E70921E0C1D700B4A8B6 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				06AECB9521E09AEE002A8F61 /* SideMenuBarVC.swift */,
+				06AECB9B21E0A22C002A8F61 /* SampleNavigation.swift */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		0639E70A21E0C1E300B4A8B6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				06AECB9721E09B0A002A8F61 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0639E70B21E0C1F100B4A8B6 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0674BC2321EF3FD800AAA200 /* ImageView+LettersExtension.swift */,
+				06E5E68A21E0981C00D6A000 /* SWRevealViewController.h */,
+				06E5E68B21E0981C00D6A000 /* SWRevealViewController.m */,
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		0639E70C21E0C1FF00B4A8B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0639E70721E0BFD800B4A8B6 /* Utils.swift */,
+				0639E70521E0BE5700B4A8B6 /* WebServices.swift */,
+				06BC559B21E1FD2000B88717 /* GlobalVariables.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0639E70D21E0C20A00B4A8B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06BC559521E1D82800B88717 /* TicketTableViewCell.swift */,
+				06BC559921E1D85A00B88717 /* TicketTableViewCell.xib */,
+				065C318021F047E000AC9E43 /* ClientListTableViewCell.swift */,
+				065C317E21F045FE00AC9E43 /* ClientListTableViewCell.xib */,
+				06865D9521F2EDCB00F95722 /* ConversationTableViewCell.swift */,
+				06865D9321F2EC2C00F95722 /* ConversationTableViewCell.xib */,
+				068CCF2F21F35659003D8D9F /* UsersAssociatedTickets.swift */,
+				068CCF2D21F355F4003D8D9F /* UsersAssociatedTickets.xib */,
+				06C376A721F7146700132A61 /* LoadingTableViewCell.xib */,
+				06C376AB21F714C700132A61 /* LoadingTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0639E70E21E0C21800B4A8B6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0639E70921E0C1D700B4A8B6 /* Side Menu */,
+				0639E70A21E0C1E300B4A8B6 /* Login */,
+				0639E71021E0C2A200B4A8B6 /* Tickets */,
+				06E2D52E21EF5A3400E0BC00 /* Users */,
+				06E2D52F21EF5A4100E0BC00 /* AboutUs */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0639E70F21E0C26600B4A8B6 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				06E5E65B21E097E800D6A000 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		0639E71021E0C2A200B4A8B6 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				06E2D02D21EDE9C90067B7E9 /* CreateTicketViewController.swift */,
+				06AECB9921E09B20002A8F61 /* InboxViewController.swift */,
+				06E2D02521EDE4100067B7E9 /* MyTicketsViewController.swift */,
+				06E2D02721EDE43F0067B7E9 /* UnAssignedTickets.swift */,
+				06E2D02921EDE5B50067B7E9 /* ClosedTickets.swift */,
+				06E2D02B21EDE5D00067B7E9 /* TrashTickets.swift */,
+				0632911521E7734E00CD7C6E /* TicketDetailsViewController.swift */,
+				0632911721E7736F00CD7C6E /* ConversationViewController.swift */,
+				0675363321E8822D00457032 /* DetailsViewController.swift */,
+				069E260921F99C6A009A7E7E /* ReplyTicket.swift */,
+				069E260B21F99C7C009A7E7E /* InternalNote.swift */,
+				0675363521E88DAB00457032 /* EditTicketDetails.swift */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		06E2D52E21EF5A3400E0BC00 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				061AF1D021F03CC200FF59F9 /* UsersListViewController.swift */,
+				061AF1D221F03CE800FF59F9 /* UsersDetailsViewController.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		06E2D52F21EF5A4100E0BC00 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				06E2D53021EF5AA300E0BC00 /* AboutUsViewController.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		06E5E64F21E097E800D6A000 = {
+			isa = PBXGroup;
+			children = (
+				06E5E65A21E097E800D6A000 /* Faveo Helpdesk Community */,
+				06E5E66F21E097EA00D6A000 /* Faveo Helpdesk CommunityTests */,
+				06E5E67A21E097EA00D6A000 /* Faveo Helpdesk CommunityUITests */,
+				06E5E65921E097E800D6A000 /* Products */,
+				B9E2696A7D1985D1E24B4216 /* Pods */,
+				35ADFD1C84FB66F36179E4CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		06E5E65921E097E800D6A000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06E5E65821E097E800D6A000 /* Faveo Helpdesk Community.app */,
+				06E5E66C21E097EA00D6A000 /* Faveo Helpdesk CommunityTests.xctest */,
+				06E5E67721E097EA00D6A000 /* Faveo Helpdesk CommunityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06E5E65A21E097E800D6A000 /* Faveo Helpdesk Community */ = {
+			isa = PBXGroup;
+			children = (
+				0639E70F21E0C26600B4A8B6 /* App Delegate */,
+				0639E70C21E0C1FF00B4A8B6 /* Model */,
+				0639E70D21E0C20A00B4A8B6 /* Views */,
+				0639E70E21E0C21800B4A8B6 /* Controllers */,
+				0639E70B21E0C1F100B4A8B6 /* Helper Classes */,
+				06E5E65D21E097E800D6A000 /* ViewController.swift */,
+				06E5E65F21E097E800D6A000 /* Main.storyboard */,
+				06E5E66221E097EA00D6A000 /* Assets.xcassets */,
+				06E5E66421E097EA00D6A000 /* LaunchScreen.storyboard */,
+				06E5E66721E097EA00D6A000 /* Info.plist */,
+				06E5E68921E0981B00D6A000 /* Faveo Helpdesk Community-Bridging-Header.h */,
+			);
+			path = "Faveo Helpdesk Community";
+			sourceTree = "<group>";
+		};
+		06E5E66F21E097EA00D6A000 /* Faveo Helpdesk CommunityTests */ = {
+			isa = PBXGroup;
+			children = (
+				06E5E67021E097EA00D6A000 /* Faveo_Helpdesk_CommunityTests.swift */,
+				06E5E67221E097EA00D6A000 /* Info.plist */,
+			);
+			path = "Faveo Helpdesk CommunityTests";
+			sourceTree = "<group>";
+		};
+		06E5E67A21E097EA00D6A000 /* Faveo Helpdesk CommunityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06E5E67B21E097EA00D6A000 /* Faveo_Helpdesk_CommunityUITests.swift */,
+				06E5E67D21E097EA00D6A000 /* Info.plist */,
+			);
+			path = "Faveo Helpdesk CommunityUITests";
+			sourceTree = "<group>";
+		};
+		35ADFD1C84FB66F36179E4CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				062897E7220075F3008857D1 /* XCTest.framework */,
+				95A522BC8E5E032B8B1E83F5 /* Pods_Faveo_Helpdesk_Community.framework */,
+				F0C139363FAA68FB27C75AE1 /* Pods_Faveo_Helpdesk_CommunityTests.framework */,
+				CD367F5B7064695612882A72 /* Pods_Faveo_Helpdesk_CommunityUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9E2696A7D1985D1E24B4216 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B44415DF56673476FB00C714 /* Pods-Faveo Helpdesk Community.debug.xcconfig */,
+				8F2A505D1ACE45CA74CF64E1 /* Pods-Faveo Helpdesk Community.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06E5E65721E097E800D6A000 /* Faveo Helpdesk Community */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06E5E68021E097EA00D6A000 /* Build configuration list for PBXNativeTarget "Faveo Helpdesk Community" */;
+			buildPhases = (
+				FF5878AF75116EE07733AA38 /* [CP] Check Pods Manifest.lock */,
+				06E5E65421E097E800D6A000 /* Sources */,
+				06E5E65521E097E800D6A000 /* Frameworks */,
+				06E5E65621E097E800D6A000 /* Resources */,
+				D88EC5FCB316F07EDD3C271D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Faveo Helpdesk Community";
+			productName = "Faveo Helpdesk Community";
+			productReference = 06E5E65821E097E800D6A000 /* Faveo Helpdesk Community.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06E5E66B21E097EA00D6A000 /* Faveo Helpdesk CommunityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06E5E68321E097EA00D6A000 /* Build configuration list for PBXNativeTarget "Faveo Helpdesk CommunityTests" */;
+			buildPhases = (
+				06E5E66821E097EA00D6A000 /* Sources */,
+				06E5E66921E097EA00D6A000 /* Frameworks */,
+				06E5E66A21E097EA00D6A000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06E5E66E21E097EA00D6A000 /* PBXTargetDependency */,
+			);
+			name = "Faveo Helpdesk CommunityTests";
+			productName = "Faveo Helpdesk CommunityTests";
+			productReference = 06E5E66C21E097EA00D6A000 /* Faveo Helpdesk CommunityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06E5E67621E097EA00D6A000 /* Faveo Helpdesk CommunityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06E5E68621E097EA00D6A000 /* Build configuration list for PBXNativeTarget "Faveo Helpdesk CommunityUITests" */;
+			buildPhases = (
+				06E5E67321E097EA00D6A000 /* Sources */,
+				06E5E67421E097EA00D6A000 /* Frameworks */,
+				06E5E67521E097EA00D6A000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06E5E67921E097EA00D6A000 /* PBXTargetDependency */,
+			);
+			name = "Faveo Helpdesk CommunityUITests";
+			productName = "Faveo Helpdesk CommunityUITests";
+			productReference = 06E5E67721E097EA00D6A000 /* Faveo Helpdesk CommunityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06E5E65021E097E800D6A000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ladybird Web Solution";
+				TargetAttributes = {
+					06E5E65721E097E800D6A000 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					06E5E66B21E097EA00D6A000 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 06E5E65721E097E800D6A000;
+					};
+					06E5E67621E097EA00D6A000 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 06E5E65721E097E800D6A000;
+					};
+				};
+			};
+			buildConfigurationList = 06E5E65321E097E800D6A000 /* Build configuration list for PBXProject "Faveo Helpdesk Community" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06E5E64F21E097E800D6A000;
+			productRefGroup = 06E5E65921E097E800D6A000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06E5E65721E097E800D6A000 /* Faveo Helpdesk Community */,
+				06E5E66B21E097EA00D6A000 /* Faveo Helpdesk CommunityTests */,
+				06E5E67621E097EA00D6A000 /* Faveo Helpdesk CommunityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06E5E65621E097E800D6A000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06865D9421F2EC2D00F95722 /* ConversationTableViewCell.xib in Resources */,
+				068CCF2E21F355F4003D8D9F /* UsersAssociatedTickets.xib in Resources */,
+				06C376A821F7146800132A61 /* LoadingTableViewCell.xib in Resources */,
+				06E5E66621E097EA00D6A000 /* LaunchScreen.storyboard in Resources */,
+				065C317F21F045FE00AC9E43 /* ClientListTableViewCell.xib in Resources */,
+				06E5E66321E097EA00D6A000 /* Assets.xcassets in Resources */,
+				06E5E66121E097E800D6A000 /* Main.storyboard in Resources */,
+				06BC559A21E1D85A00B88717 /* TicketTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06E5E66A21E097EA00D6A000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06E5E67521E097EA00D6A000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D88EC5FCB316F07EDD3C271D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Faveo Helpdesk Community/Pods-Faveo Helpdesk Community-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JJFloatingActionButton/JJFloatingActionButton.framework",
+				"${BUILT_PRODUCTS_DIR}/RMessage/RMessage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPickerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JJFloatingActionButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMessage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHEXColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Faveo Helpdesk Community/Pods-Faveo Helpdesk Community-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF5878AF75116EE07733AA38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Faveo Helpdesk Community-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06E5E65421E097E800D6A000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E5E65E21E097E800D6A000 /* ViewController.swift in Sources */,
+				06AECB9A21E09B20002A8F61 /* InboxViewController.swift in Sources */,
+				0674BC2421EF3FD800AAA200 /* ImageView+LettersExtension.swift in Sources */,
+				0675363621E88DAB00457032 /* EditTicketDetails.swift in Sources */,
+				068CCF3021F35659003D8D9F /* UsersAssociatedTickets.swift in Sources */,
+				06E2D02A21EDE5B50067B7E9 /* ClosedTickets.swift in Sources */,
+				0639E70821E0BFD800B4A8B6 /* Utils.swift in Sources */,
+				06E2D02821EDE43F0067B7E9 /* UnAssignedTickets.swift in Sources */,
+				06E2D02621EDE4100067B7E9 /* MyTicketsViewController.swift in Sources */,
+				065C318121F047E000AC9E43 /* ClientListTableViewCell.swift in Sources */,
+				06C376AC21F714C700132A61 /* LoadingTableViewCell.swift in Sources */,
+				0632911821E7736F00CD7C6E /* ConversationViewController.swift in Sources */,
+				0632911621E7734E00CD7C6E /* TicketDetailsViewController.swift in Sources */,
+				06E5E65C21E097E800D6A000 /* AppDelegate.swift in Sources */,
+				069E260C21F99C7C009A7E7E /* InternalNote.swift in Sources */,
+				06AECB9621E09AEE002A8F61 /* SideMenuBarVC.swift in Sources */,
+				069E260A21F99C6A009A7E7E /* ReplyTicket.swift in Sources */,
+				06AECB9821E09B0A002A8F61 /* LoginViewController.swift in Sources */,
+				06E2D02E21EDE9C90067B7E9 /* CreateTicketViewController.swift in Sources */,
+				061AF1D121F03CC200FF59F9 /* UsersListViewController.swift in Sources */,
+				06BC559C21E1FD2000B88717 /* GlobalVariables.swift in Sources */,
+				06E2D02C21EDE5D00067B7E9 /* TrashTickets.swift in Sources */,
+				06AECB9C21E0A22C002A8F61 /* SampleNavigation.swift in Sources */,
+				06BC559721E1D82800B88717 /* TicketTableViewCell.swift in Sources */,
+				0639E70621E0BE5700B4A8B6 /* WebServices.swift in Sources */,
+				061AF1D321F03CE800FF59F9 /* UsersDetailsViewController.swift in Sources */,
+				06865D9621F2EDCB00F95722 /* ConversationTableViewCell.swift in Sources */,
+				06E5E68C21E0981D00D6A000 /* SWRevealViewController.m in Sources */,
+				06E2D53121EF5AA300E0BC00 /* AboutUsViewController.swift in Sources */,
+				0675363421E8822D00457032 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06E5E66821E097EA00D6A000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E5E67121E097EA00D6A000 /* Faveo_Helpdesk_CommunityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06E5E67321E097EA00D6A000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E5E67C21E097EA00D6A000 /* Faveo_Helpdesk_CommunityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06E5E66E21E097EA00D6A000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06E5E65721E097E800D6A000 /* Faveo Helpdesk Community */;
+			targetProxy = 06E5E66D21E097EA00D6A000 /* PBXContainerItemProxy */;
+		};
+		06E5E67921E097EA00D6A000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06E5E65721E097E800D6A000 /* Faveo Helpdesk Community */;
+			targetProxy = 06E5E67821E097EA00D6A000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06E5E65F21E097E800D6A000 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06E5E66021E097E800D6A000 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06E5E66421E097EA00D6A000 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06E5E66521E097EA00D6A000 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06E5E67E21E097EA00D6A000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06E5E67F21E097EA00D6A000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06E5E68121E097EA00D6A000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B44415DF56673476FB00C714 /* Pods-Faveo Helpdesk Community.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VY8B59STG;
+				INFOPLIST_FILE = "Faveo Helpdesk Community/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ladybirdwebsolutions.FaveoHelpdeskCommunity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Faveo Helpdesk Community/Faveo Helpdesk Community-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		06E5E68221E097EA00D6A000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F2A505D1ACE45CA74CF64E1 /* Pods-Faveo Helpdesk Community.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VY8B59STG;
+				INFOPLIST_FILE = "Faveo Helpdesk Community/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ladybirdwebsolutions.FaveoHelpdeskCommunity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Faveo Helpdesk Community/Faveo Helpdesk Community-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		06E5E68421E097EA00D6A000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VY8B59STG;
+				INFOPLIST_FILE = "Faveo Helpdesk CommunityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ladybirdwebsolutions.FaveoHelpdeskCommunity.Faveo-Helpdesk-CommunityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Faveo Helpdesk Community.app/Faveo Helpdesk Community";
+			};
+			name = Debug;
+		};
+		06E5E68521E097EA00D6A000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VY8B59STG;
+				INFOPLIST_FILE = "Faveo Helpdesk CommunityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ladybirdwebsolutions.FaveoHelpdeskCommunity.Faveo-Helpdesk-CommunityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Faveo Helpdesk Community.app/Faveo Helpdesk Community";
+			};
+			name = Release;
+		};
+		06E5E68721E097EA00D6A000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VY8B59STG;
+				INFOPLIST_FILE = "Faveo Helpdesk CommunityUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ladybirdwebsolutions.FaveoHelpdeskCommunity.Faveo-Helpdesk-CommunityUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Faveo Helpdesk Community";
+			};
+			name = Debug;
+		};
+		06E5E68821E097EA00D6A000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VY8B59STG;
+				INFOPLIST_FILE = "Faveo Helpdesk CommunityUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ladybirdwebsolutions.FaveoHelpdeskCommunity.Faveo-Helpdesk-CommunityUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Faveo Helpdesk Community";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06E5E65321E097E800D6A000 /* Build configuration list for PBXProject "Faveo Helpdesk Community" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06E5E67E21E097EA00D6A000 /* Debug */,
+				06E5E67F21E097EA00D6A000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06E5E68021E097EA00D6A000 /* Build configuration list for PBXNativeTarget "Faveo Helpdesk Community" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06E5E68121E097EA00D6A000 /* Debug */,
+				06E5E68221E097EA00D6A000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06E5E68321E097EA00D6A000 /* Build configuration list for PBXNativeTarget "Faveo Helpdesk CommunityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06E5E68421E097EA00D6A000 /* Debug */,
+				06E5E68521E097EA00D6A000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06E5E68621E097EA00D6A000 /* Build configuration list for PBXNativeTarget "Faveo Helpdesk CommunityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06E5E68721E097EA00D6A000 /* Debug */,
+				06E5E68821E097EA00D6A000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06E5E65021E097E800D6A000 /* Project object */;
+}

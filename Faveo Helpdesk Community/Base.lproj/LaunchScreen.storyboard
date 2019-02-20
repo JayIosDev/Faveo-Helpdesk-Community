@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9q0-DO-Xfo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zRl-my-OU4">
+            <objects>
+                <viewController id="9q0-DO-Xfo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ahg-yq-BZN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lk0-yh-wSz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GU7-Qn-BeL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Community" translatesAutoresizingMaskIntoConstraints="NO" id="D9j-sj-p9w">
+                                <rect key="frame" x="20" y="224.5" width="335" height="218"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D9j-sj-p9w" firstAttribute="centerX" secondItem="GU7-Qn-BeL" secondAttribute="centerX" id="MPK-NB-0EB"/>
+                            <constraint firstAttribute="trailing" secondItem="D9j-sj-p9w" secondAttribute="trailing" constant="20" id="gMh-qH-GNs"/>
+                            <constraint firstItem="D9j-sj-p9w" firstAttribute="centerY" secondItem="GU7-Qn-BeL" secondAttribute="centerY" id="qgo-9Y-d45"/>
+                            <constraint firstItem="D9j-sj-p9w" firstAttribute="leading" secondItem="GU7-Qn-BeL" secondAttribute="leading" constant="20" id="sLY-uP-cxM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jby-nW-2xs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCV-eT-bi5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="377"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Community" width="410" height="218"/>
+    </resources>
+</document>

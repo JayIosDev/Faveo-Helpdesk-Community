@@ -1,0 +1,6 @@
+framework module Pods_Faveo_Helpdesk_Community {
+  umbrella header "Pods-Faveo Helpdesk Community-umbrella.h"
+
+  export *
+  module * { export * }
+}
