@@ -62,6 +62,8 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
        self.helptopicTextField.delegate = self
        self.slaTextField.delegate = self
         
+        self.sampleTableView.tableFooterView = UIView()
+        
         // to set black background color mask for Progress view
         SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
         

@@ -994,7 +994,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKs-dF-Twf">
                                 <rect key="frame" x="0.0" y="94" width="414" height="640"/>
                             </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACZN-2015-0002015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP4-ar-xcl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAAA-0000-0025" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP4-ar-xcl">
                                 <rect key="frame" x="0.0" y="35" width="131" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="RKL-UD-qdZ"/>
@@ -1005,8 +1005,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJZ-b9-U2o">
-                                <rect key="frame" x="298" y="35" width="108" height="21"/>
+                                <rect key="frame" x="302" y="35" width="104" height="21"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="D8o-4R-5J3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1017,10 +1020,10 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ClientName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXJ-hl-kut">
-                                <rect key="frame" x="138" y="34" width="147" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ClientName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXJ-hl-kut">
+                                <rect key="frame" x="134" y="34" width="139" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="147" id="Hdl-dd-RJr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Hdl-dd-RJr"/>
                                     <constraint firstAttribute="height" constant="21" id="adr-xS-M6P"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
@@ -1030,7 +1033,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hJZ-b9-U2o" firstAttribute="leading" secondItem="PXJ-hl-kut" secondAttribute="trailing" constant="13" id="0z2-kp-GO8"/>
                             <constraint firstItem="wmN-8D-fCT" firstAttribute="leading" secondItem="a4o-hC-hel" secondAttribute="leading" id="1nf-zY-mhW"/>
                             <constraint firstItem="PXJ-hl-kut" firstAttribute="top" secondItem="a4o-hC-hel" secondAttribute="top" constant="14" id="52B-c1-9CU"/>
                             <constraint firstItem="uP4-ar-xcl" firstAttribute="leading" secondItem="wEm-NG-Rro" secondAttribute="leadingMargin" constant="-20" id="7ua-2u-Uvz"/>
@@ -1058,7 +1060,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYS-kK-QIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2368" y="968"/>
+            <point key="canvasLocation" x="2366.666666666667" y="967.66304347826099"/>
         </scene>
         <!--Users Details View Controller-->
         <scene sceneID="Xxe-BO-nfu">
@@ -1868,7 +1870,7 @@
                                                     <rect key="frame" x="97" y="22" width="219" height="30"/>
                                                     <color key="backgroundColor" red="0.7702981539" green="0.54823875629999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <state key="normal" title="Update Details">
+                                                    <state key="normal" title="UPDATE DETAILS">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -2877,20 +2879,20 @@
     <resources>
         <image name="Community" width="410" height="218"/>
         <image name="SideBarIcon.png" width="16" height="16"/>
-        <image name="about" width="24" height="24"/>
-        <image name="call1" width="24" height="24"/>
-        <image name="closed2" width="24" height="24"/>
-        <image name="createTicket" width="512" height="512"/>
+        <image name="about" width="72" height="72"/>
+        <image name="call1" width="72" height="72"/>
+        <image name="closed2" width="72" height="72"/>
+        <image name="createTicket" width="1536" height="1536"/>
         <image name="default_pic" width="512" height="512"/>
         <image name="ic_forward" width="512" height="512"/>
-        <image name="inbox3" width="512" height="512"/>
-        <image name="logout2" width="24" height="24"/>
-        <image name="mail" width="24" height="24"/>
-        <image name="menu-button" width="24" height="24"/>
-        <image name="myTickets" width="512" height="512"/>
-        <image name="trash" width="32" height="32"/>
-        <image name="unAssigned2" width="512" height="512"/>
-        <image name="url1" width="24" height="24"/>
-        <image name="userList" width="512" height="512"/>
+        <image name="inbox3" width="1536" height="1536"/>
+        <image name="logout2" width="72" height="72"/>
+        <image name="mail" width="72" height="72"/>
+        <image name="menu-button" width="72" height="72"/>
+        <image name="myTickets" width="1536" height="1536"/>
+        <image name="trash" width="64" height="64"/>
+        <image name="unAssigned2" width="1536" height="1536"/>
+        <image name="url1" width="72" height="72"/>
+        <image name="userList" width="1024" height="1024"/>
     </resources>
 </document>

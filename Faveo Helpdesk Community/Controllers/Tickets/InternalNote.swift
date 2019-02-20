@@ -31,6 +31,8 @@ class InternalNote: UITableViewController,RMControllerDelegate,UITextViewDelegat
         SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
         SVProgressHUD.dismiss()
         
+        self.tableViewOutlet.tableFooterView = UIView()
+        
         //RMessage
         rControl.presentationViewController = self
         rControl.delegate = self

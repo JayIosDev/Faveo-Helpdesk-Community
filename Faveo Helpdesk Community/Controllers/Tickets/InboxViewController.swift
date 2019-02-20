@@ -105,6 +105,8 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
         //tableViewcell
         tableViewOutlet.register(UINib(nibName: "TicketTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
+        self.tableViewOutlet.tableFooterView = UIView()
+        
         // Add Refresh Control to Table View
         if #available(iOS 10.0, *) {
             tableViewOutlet.refreshControl = refreshControl

@@ -87,6 +87,8 @@ class UsersListViewController: UIViewController,UITableViewDataSource,UITableVie
             sampleTableView.addSubview(refreshControl)
         }
         
+        self.sampleTableView.tableFooterView = UIView()
+        
         // Configure Refresh Control
         self.configureRefreshControl()
         

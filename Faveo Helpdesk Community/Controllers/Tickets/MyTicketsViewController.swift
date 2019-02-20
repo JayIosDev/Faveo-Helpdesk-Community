@@ -55,6 +55,8 @@ class MyTicketsViewController: UIViewController,UITableViewDataSource,UITableVie
         // Do any additional setup after loading the view.
         setUpSideMenuBar()
         
+        self.sampleTableView.tableFooterView = UIView()
+        
         //tableViewcell
         sampleTableView.register(UINib(nibName: "TicketTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
