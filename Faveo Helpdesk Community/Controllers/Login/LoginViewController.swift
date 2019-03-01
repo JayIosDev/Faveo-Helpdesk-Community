@@ -5,11 +5,9 @@
 //  Created by Mallikarjun on 05/01/19.
 //  Copyright © 2019 Ladybird Web Solution. All rights reserved.
 //
-
 import UIKit
 import SVProgressHUD
 import RMessage
-
 class LoginViewController: UIViewController, UITextFieldDelegate,RMControllerDelegate {
 
     
@@ -24,17 +22,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate,RMControllerDel
     @IBOutlet weak var passwordTextField: UITextField!
     
     let userDefaults = UserDefaults.standard
-    
+
     //RMessage
      private let rControl = RMController()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-    
         //RMessage
+        
+        urlTextField.text = GlobalVariables.sharedManager.UrlText
         rControl.presentationViewController = self
         rControl.delegate = self
 
@@ -58,6 +55,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate,RMControllerDel
             
             urlTextField.resignFirstResponder()
             
+            
            // print("Clicked on GO button on KeyBoard")
             SVProgressHUD.show(withStatus: "Validating URL")
             
@@ -70,6 +68,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate,RMControllerDel
     }
     
     @IBAction func urlNextButtonClicked(_ sender: Any) {
+        
+        GlobalVariables.sharedManager.UrlText = urlTextField.text
+        print(GlobalVariables.sharedManager.UrlText)
         
         SVProgressHUD.show(withStatus: "Validating URL")
         
@@ -318,6 +319,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate,RMControllerDel
         
     }
     
+    @IBOutlet weak var HideOutlet: UIButton!
+    @IBAction func HideAction(_ sender: UIButton) {
+        if passwordTextField.isSecureTextEntry{
+            passwordTextField.isSecureTextEntry = false
+            HideOutlet.setImage(UIImage(named: "Show"), for: .normal)
+        }else{
+            passwordTextField.isSecureTextEntry = true
+            HideOutlet.setImage(UIImage(named: "Hide"), for: .normal)
 
-
+        }
+        
+    }
+    
 }

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SVProgressHUD
 import RMessage
 
 
@@ -28,8 +27,7 @@ class InternalNote: UITableViewController,RMControllerDelegate,UITextViewDelegat
         super.viewDidLoad()
 
         // to set black background color mask for Progress view
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
-        SVProgressHUD.dismiss()
+        
         
         self.tableViewOutlet.tableFooterView = UIView()
         
@@ -44,17 +42,14 @@ class InternalNote: UITableViewController,RMControllerDelegate,UITextViewDelegat
         
         print("Clicked on internal note button")
         
-        SVProgressHUD.show(withStatus: "Adding Note...")
         
         if messageTextView.text == ""{
             
             showAlert(title: "Faveo Helpdesk", message: "Enter the note content", vc: self)
-            SVProgressHUD.dismiss()
         }
         else if (messageTextView!.text?.count)! < 2 {
             
             showAlert(title: "Faveo Helpdesk", message: "Note content should be more than 1 characters", vc: self)
-            SVProgressHUD.dismiss()
         }
         else
         {
@@ -124,20 +119,17 @@ class InternalNote: UITableViewController,RMControllerDelegate,UITextViewDelegat
                                                 NotificationCenter.default.post(name: Notification.Name("reload"), object: nil)
                                                 
                                                 ////Showing Success Message End
-                                                SVProgressHUD.dismiss()
                                                 navigationController.popViewController(animated: true)
                                                 
                                             }
                                             else if data["error"]["body"].exists(){
                                                 
                                                 showAlert(title: "Alert", message: "Note content is required. It should not be empty.", vc: self)
-                                                SVProgressHUD.dismiss()
                                                 
                                             }
                                             else{
                                                 
                                                 showAlert(title: "Error", message: "Something went wrong. Please try again later.", vc: self)
-                                                SVProgressHUD.dismiss()
                                                 
                                             }
  
@@ -150,7 +142,6 @@ class InternalNote: UITableViewController,RMControllerDelegate,UITextViewDelegat
             print("Error From Add Internal Note Method: \(error.localizedDescription)")
             
             showAlert(title: "Faveo Heldesk", message: error.localizedDescription, vc: self)
-            SVProgressHUD.dismiss()
         }
         
         

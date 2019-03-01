@@ -15,11 +15,18 @@ class ClientListTableViewCell: UITableViewCell {
     @IBOutlet weak var userEmail: UILabel!
     @IBOutlet weak var userMobileNumber: UILabel!
     
-    
+    @IBOutlet weak var backView: UIView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
+        backView.layer.cornerRadius = 5.0
+        backView.layer.shadowColor = UIColor.gray.cgColor
+        backView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        backView.layer.shadowRadius = 12.0
+        backView.layer.shadowOpacity = 0.4
+
         //making userProfileImage Circular
         userProfilePicture.layer.cornerRadius = 25
         userProfilePicture.clipsToBounds = true

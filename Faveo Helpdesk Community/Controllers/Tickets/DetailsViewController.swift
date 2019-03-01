@@ -12,58 +12,40 @@ import SVProgressHUD
 
 class DetailsViewController: UITableViewController {
 
+  
     let userDefaults = UserDefaults.standard
-
     @IBOutlet var sampleTableView: UITableView!
     @IBOutlet weak var subjectTextView: UITextView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var sourceTextField: UITextField!
-    
     @IBOutlet weak var departmentTextField: UITextField!
-    
     @IBOutlet weak var assigneeName: UITextField!
-  
-    
     @IBOutlet weak var slaTextField: UITextField!
-    
     @IBOutlet weak var createdTextField: UITextField!
     @IBOutlet weak var lastResponseTextField: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // to set black background color mask for Progress view
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
-        SVProgressHUD.show()
-        
+       
         subjectTextView.isEditable = false
-        
+
         self.tableView.tableFooterView = UIView()
         
         getTicketDetails()
         
     }
     
-    
     func getTicketDetails() {
-        
         
         var ticketThreadURL = userDefaults.string(forKey: "baseURL")
         ticketThreadURL?.append("api/v1/helpdesk/ticket")
-        
         let defaults = UserDefaults.standard
         let value = defaults.string(forKey:"token")
         print("token=>",value!)
-        
         let tickeId = GlobalVariables.sharedManager.ticketId
-        
         requestGETURL(ticketThreadURL!, params: ["token":value as AnyObject,
                                                  "ticket_id":tickeId as AnyObject],  success: { (data) in
-                                                    
-                                                    
-                                                    
              //    print("JSON is: ",data)
                                                     
                 let msg = data["message"].stringValue
@@ -105,7 +87,6 @@ class DetailsViewController: UITableViewController {
                     }
                     
                     //ticket owner email
-                    
                     let emailId = data["result"]["email"].stringValue
                     
                     if emailId.isEmpty {
@@ -128,7 +109,7 @@ class DetailsViewController: UITableViewController {
                         self.sourceTextField.text = ticketSource
                     }
                     
-                    //ticket department
+                    // ticket department
                     
                     let departmentName = data["result"]["dept_name"].stringValue
                     
@@ -151,9 +132,7 @@ class DetailsViewController: UITableViewController {
                         
                         self.assigneeName.text = assigneeName
                     }
-            
-                    
-                   //SLA
+                    //SLA
 
                     let slaName = data["result"]["sla_name"].stringValue
                 
@@ -194,19 +173,16 @@ class DetailsViewController: UITableViewController {
                         
                     }
                     
-                    
-                                                        
                  } // End else of ....if msg == "Token expired"
                                                     
-                 SVProgressHUD.dismiss()
-                                                    
+//                self.sampleTableView.isHidden = false
         }) { (error) in
             
             //Example: After timeout error - The request timed out.
             print("Error From Details of Ticket API Call: \(error.localizedDescription)")
             
             showAlert(title: "Faveo Heldesk", message: error.localizedDescription, vc: self)
-            SVProgressHUD.dismiss()
+//            self.sampleTableView.isHidden = false
 
         }
         

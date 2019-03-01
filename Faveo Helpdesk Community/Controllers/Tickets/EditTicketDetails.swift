@@ -8,7 +8,6 @@
 
 import UIKit
 import ActionSheetPicker_3_0
-import SVProgressHUD
 import RMessage
 
 class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerDelegate,UITextViewDelegate {
@@ -43,10 +42,7 @@ class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerD
 
         self.title = "Edit Details"
         // to set black background color mask for Progress view
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
-        SVProgressHUD.show()
-        
-        
+     
          //RMessage
          rControl.presentationViewController = self
          rControl.delegate = self
@@ -171,7 +167,6 @@ class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerD
                                                         
                                                     } // End else of ....if msg == "Token expired"
                                                     
-                                                    SVProgressHUD.dismiss()
                                                     
         }) { (error) in
             
@@ -182,14 +177,13 @@ class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerD
     }
     
     
-    
-    @IBAction func priorityTextFieldClicked(_ sender: Any) {
-       
+    @IBAction func priorityTextFiledBtnClicked(_ sender: UIButton) {
+        
         ActionSheetStringPicker.show(withTitle: "Select Priority", rows: GlobalVariables.sharedManager.priorityNamesArray, initialSelection: 1, doneBlock: {
             picker, value, index in
             
-          //  print("Values is : \(value)")
-          //  print("index is : \(index ?? "")")
+            //  print("Values is : \(value)")
+            //  print("index is : \(index ?? "")")
             
             print("Selected Priority is : \(index ?? "No Value")")
             self.priorityTextField.text = index as? String
@@ -200,8 +194,10 @@ class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerD
     }
     
     
-    @IBAction func helptopicTextFieldClicked(_ sender: Any) {
-        
+    
+    
+    
+    @IBAction func helptopicTextFieldBtnClicked(_ sender: UIButton) {
         ActionSheetStringPicker.show(withTitle: "Select HelpTopic", rows: GlobalVariables.sharedManager.helpTopicNamesArray, initialSelection: 1, doneBlock: {
             picker, value, index in
             
@@ -213,11 +209,16 @@ class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerD
             
             return
         }, cancel: { ActionStringCancelBlock in return }, origin: sender)
-        
     }
     
     
-    @IBAction func sourceTextFieldClicked(_ sender: Any) {
+    
+    
+    
+    
+   
+    
+    @IBAction func sourcetextFieldbtnClicked(_ sender: UIButton) {
         
         ActionSheetStringPicker.show(withTitle: "Select Source", rows: GlobalVariables.sharedManager.sourceNamesArray, initialSelection: 1, doneBlock: {
             picker, value, index in
@@ -234,7 +235,13 @@ class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerD
     }
     
     
-    @IBAction func slaTextFieldClicked(_ sender: Any) {
+    
+    
+    
+   
+    
+    
+    @IBAction func slaTextFieldBtnClicked(_ sender: UIButton) {
         
         ActionSheetStringPicker.show(withTitle: "Select SLA", rows: GlobalVariables.sharedManager.slaNameArray, initialSelection: 1, doneBlock: {
             picker, value, index in
@@ -248,8 +255,17 @@ class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerD
             return
         }, cancel: { ActionStringCancelBlock in return }, origin: sender)
         
+        
     }
     
+    
+    
+    
+    
+    
+    
+    
+ 
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return false
@@ -259,15 +275,12 @@ class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerD
     
     @IBAction func saveButtonClicked(_ sender: Any) {
         
-        SVProgressHUD.show(withStatus: "Updating Details")
         
         if subjectTextView.text == "" || subjectTextView.text.count == 0{
             
           showAlert(title: "Alert", message: "Please Enter Ticket Subject", vc: self)
-          SVProgressHUD.dismiss()
         }
         else{
-            
             //call API
             updateTicketDetailsAPICall()
         }
@@ -441,7 +454,6 @@ class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerD
                                             else{
                                                 
                                                showAlert(title: "Error", message: "Something went wrong. Please try again later.", vc: self)
-                                               SVProgressHUD.dismiss()
  
                                             }
                                             
@@ -454,7 +466,6 @@ class EditTicketDetails: UITableViewController,UITextFieldDelegate,RMControllerD
              print("Error From Edit Ticket API Method: \(error.localizedDescription)")
             
             showAlert(title: "Faveo Heldesk", message: error.localizedDescription, vc: self)
-            SVProgressHUD.dismiss()
         }
         
     }

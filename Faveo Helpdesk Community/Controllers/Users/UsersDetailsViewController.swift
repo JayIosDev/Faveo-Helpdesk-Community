@@ -30,8 +30,12 @@ class UsersTicketsDataList{
 
 
 class UsersDetailsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
+    @IBOutlet weak var backGroundImage: UIImageView!
     
+    @IBOutlet weak var skeltonView: UIView!
+    @IBOutlet weak var skeltonGifImage: UIImageView!
+    
+   
     @IBOutlet weak var tableViewOutlet: UITableView!
     
     @IBOutlet weak var userProfilePicture: UIImageView!
@@ -51,11 +55,12 @@ class UsersDetailsViewController: UIViewController,UITableViewDataSource,UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backGroundImage.loadGif(name: "background")
 
+        skeltonGifImage.loadGif(name: "UserDetailGif")
         
         // to set black background color mask for Progress view
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
-        
         //tableViewcell
         tableViewOutlet.register(UINib(nibName: "UsersAssociatedTickets", bundle: nil), forCellReuseIdentifier: "UsersAssociatedTicketsID")
         
@@ -138,7 +143,6 @@ class UsersDetailsViewController: UIViewController,UITableViewDataSource,UITable
         //Get Tickets Associated with this user
          getTicketsAssociatedWithTheUser()
         
-         SVProgressHUD.show(withStatus: "Loading...")
         
         
     }
@@ -191,7 +195,9 @@ class UsersDetailsViewController: UIViewController,UITableViewDataSource,UITable
                 
                 DispatchQueue.main.async {
                     self.tableViewOutlet.reloadData()
-                    SVProgressHUD.dismiss()
+
+                   self.skeltonView.isHidden = true
+                    
                 }
                 
             } // End of - else of if msg
@@ -204,61 +210,30 @@ class UsersDetailsViewController: UIViewController,UITableViewDataSource,UITable
             print("Error From Users Details API Call: \(error.localizedDescription)")
             
             showAlert(title: "Faveo Heldesk", message: error.localizedDescription, vc: self)
-            SVProgressHUD.dismiss()
-            
+            self.skeltonView.isHidden = true
+
         }
         
     }//end getTicketsAssociatedWithTheUser()
     
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
-        var numberOfSections:Int = 0
-        
-        if totalDataArray.count == 0{
-            
-            let noDataLabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-            noDataLabel.text = NSLocalizedString("No Records..!!!", comment: "")
-            noDataLabel.textColor = UIColor.black
-            noDataLabel.textAlignment = .center
-            tableView.backgroundView = noDataLabel
-            tableView.separatorStyle = .none
-            
-            
-        }else{
-            
-            tableView.separatorStyle = .singleLine
-            numberOfSections = 1
-            tableView.backgroundView = nil
-            
-        }
-        return numberOfSections
-    }
+  
     
     //Tells the data source to return the number of rows in a given section of a table view.
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if totalDataArray.count == 0{
-            
-            let noDataLabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-            noDataLabel.text = NSLocalizedString("No Records..!!!", comment: "")
-            noDataLabel.textColor = UIColor.black
-            noDataLabel.textAlignment = .center
-            tableView.backgroundView = noDataLabel
-            tableView.separatorStyle = .none
-            
-        }else{
-            
-            tableView.separatorStyle = .singleLine
-            tableView.backgroundView = nil
-            
-        }
         
         return totalDataArray.count
     }
     
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 10, 0)
+        cell.layer.transform = rotationTransform
+        
+        UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveEaseOut, animations: {
+            cell.layer.transform = CATransform3DIdentity
+            
+        })
         
         cell.selectionStyle = .none
         
@@ -293,7 +268,6 @@ class UsersDetailsViewController: UIViewController,UITableViewDataSource,UITable
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
-        
         globalVariables.firstName = globalVariables.firstNameFromUserList ?? ""
         globalVariables.ticketNumber = totalDataArray[indexPath.row].ticketNumber
         globalVariables.ticketStatus =  totalDataArray[indexPath.row].ticketStatus 
@@ -306,10 +280,4 @@ class UsersDetailsViewController: UIViewController,UITableViewDataSource,UITable
         
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        return 65
-    }
-    
-
 }

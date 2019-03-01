@@ -14,6 +14,7 @@ class UsersAssociatedTickets: UITableViewCell {
     
     @IBOutlet weak var indicationView: UIView!
     
+    @IBOutlet weak var backView: UIView!
     
     @IBOutlet weak var ticketNumber: UILabel!
     
@@ -23,6 +24,15 @@ class UsersAssociatedTickets: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
+        
+        backView.layer.cornerRadius = 5.0
+        backView.layer.shadowColor = UIColor.gray.cgColor
+        backView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        backView.layer.shadowRadius = 12.0
+        backView.layer.shadowOpacity = 0.4
+        
         // Initialization code
         
         //Adding curves to indiaction view (priority)

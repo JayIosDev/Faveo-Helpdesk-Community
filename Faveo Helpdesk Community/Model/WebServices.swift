@@ -125,6 +125,7 @@ public func requestGETURL(_ strURL: String, params : [String : AnyObject]?, succ
        // SVProgressHUD.show()
         
 
+        
         Alamofire.request(strURL, method: .get, parameters: params, encoding: URLEncoding.default).responseJSON { (responseObject) -> Void in
             
            //  print(responseObject)

@@ -22,15 +22,15 @@
                         <rect key="frame" x="106" y="0.0" width="110" height="49.5"/>
                         <subviews>
                             <activityIndicatorView opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="rXB-3K-UBk">
-                                <rect key="frame" x="7" y="15" width="20" height="20"/>
+                                <rect key="frame" x="14.5" y="15" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="2CC-B0-k4q"/>
                                     <constraint firstAttribute="width" constant="20" id="Q3S-cf-vNX"/>
                                 </constraints>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anV-ne-Bwu">
-                                <rect key="frame" x="35" y="14.5" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="42.5" y="16" width="67.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -45,7 +45,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="WX9-CC-XKm" firstAttribute="top" secondItem="fqY-wp-un9" secondAttribute="top" id="AEz-6Y-yQp"/>
                     <constraint firstItem="WX9-CC-XKm" firstAttribute="centerX" secondItem="fqY-wp-un9" secondAttribute="centerX" id="F53-sg-q0R"/>
@@ -56,7 +56,7 @@
                 <outlet property="indicator" destination="rXB-3K-UBk" id="buy-i4-KPY"/>
                 <outlet property="loadingLbl" destination="anV-ne-Bwu" id="lQm-qM-ID8"/>
             </connections>
-            <point key="canvasLocation" x="363" y="-117"/>
+            <point key="canvasLocation" x="355" y="-103"/>
         </tableViewCell>
     </objects>
 </document>

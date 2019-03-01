@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SVProgressHUD
 import RMessage
 
 class UsersDataList{
@@ -40,6 +39,29 @@ class UsersDataList{
 
 class UsersListViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,RMControllerDelegate {
   
+   
+    
+    
+    @IBOutlet weak var skeltonView: UIView!
+    
+    
+    @IBOutlet weak var skeltonImage1: UIImageView!
+    
+    @IBOutlet weak var skeltonImage2: UIImageView!
+    
+    @IBOutlet weak var skeltonImage3: UIImageView!
+    
+    @IBOutlet weak var skeltonImage4: UIImageView!
+    
+    @IBOutlet weak var skeltonImage5: UIImageView!
+    
+    
+    
+    
+    
+    
+    
+    
 
     var selectedPath:IndexPath?
     var selectedTicketId:String?
@@ -74,6 +96,13 @@ class UsersListViewController: UIViewController,UITableViewDataSource,UITableVie
         super.viewDidLoad()
 
         
+        sampleTableView.isHidden = true
+        skeltonImage1.loadGif(name: "skeltonGif")
+        skeltonImage2.loadGif(name: "skeltonGif")
+        skeltonImage3.loadGif(name: "skeltonGif")
+        skeltonImage4.loadGif(name: "skeltonGif")
+        skeltonImage5.loadGif(name: "skeltonGif")
+        
         // Do any additional setup after loading the view.
         setUpSideMenuBar()
         
@@ -104,24 +133,23 @@ class UsersListViewController: UIViewController,UITableViewDataSource,UITableVie
             
             userDefaults.set("", forKey: "userRole")
             showLogoutAlert(title: "Access Denied", message: "Your role has beed changed to user. Contact to your Admin and try to login again.", vc: self)
-            SVProgressHUD.dismiss()
+              self.sampleTableView.isHidden = false
         }
         else if valueFromRefreshTokenValue == "Method not allowed" || valueFromRefreshTokenValue == "method not allowed"{
             
             userDefaults.set("", forKey: "valueFromRefreshToken")
             showLogoutAlert(title: "Access Denied", message: "Your HELPDESK URL were changed, contact to Admin and please log back in.", vc: self)
-            SVProgressHUD.dismiss()
+            self.sampleTableView.isHidden = false
         }
         else if valueFromRefreshTokenValue == "invalid_credentials" || valueFromRefreshTokenValue == "Invalid credential"{
             
             userDefaults.set("", forKey: "valueFromRefreshToken")
             showLogoutAlert(title: "Access Denied", message: "Your Login credentials were changed or Your Account is Deactivated, contact to Admin and please log back in.", vc: self)
-            SVProgressHUD.dismiss()
+            self.sampleTableView.isHidden = false
         }
         else{
         // to set black background color mask for Progress view
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
-        SVProgressHUD.show(withStatus: "Loading Users")
+        
        
         getUserLists()
         
@@ -223,7 +251,7 @@ class UsersListViewController: UIViewController,UITableViewDataSource,UITableVie
                 DispatchQueue.main.async {
                     self.sampleTableView.reloadData()
                     self.refreshControl.endRefreshing()
-                    SVProgressHUD.dismiss()
+                    self.sampleTableView.isHidden = false
                 }
  
                 
@@ -237,7 +265,7 @@ class UsersListViewController: UIViewController,UITableViewDataSource,UITableVie
             print("Error From Getting Users List API Call: \(error.localizedDescription)")
             
             showAlert(title: "Faveo Heldesk", message: error.localizedDescription, vc: self)
-            SVProgressHUD.dismiss()
+            self.sampleTableView.isHidden = false
 
         }
         
@@ -273,14 +301,14 @@ class UsersListViewController: UIViewController,UITableViewDataSource,UITableVie
     //Tells the data source to return the number of rows in a given section of a table view.
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if totalDataArray.count == 0{
+        if totalDataArray.count < 1{
             
-            let noDataLabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-            noDataLabel.text = NSLocalizedString("No Records..!!!", comment: "")
-            noDataLabel.textColor = UIColor.black
-            noDataLabel.textAlignment = .center
-            tableView.backgroundView = noDataLabel
-            tableView.separatorStyle = .none
+            let emptyDataImage = UIImage(named: "AppIcon")
+            let emptyDataImageView = UIImageView(image: emptyDataImage)
+            
+            emptyDataImageView.loadGif(name: "Nodata")
+            emptyDataImageView.frame = CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height)
+            tableView.backgroundView = emptyDataImageView
             
         }else{
             
@@ -298,6 +326,14 @@ class UsersListViewController: UIViewController,UITableViewDataSource,UITableVie
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 10, 0)
+        cell.layer.transform = rotationTransform
+        
+        UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveEaseOut, animations: {
+            cell.layer.transform = CATransform3DIdentity
+            
+        })
         
         cell.selectionStyle = .none
         
@@ -514,7 +550,8 @@ class UsersListViewController: UIViewController,UITableViewDataSource,UITableVie
                 DispatchQueue.main.async {
                     self.sampleTableView.reloadData()
                     self.refreshControl.endRefreshing()
-                    SVProgressHUD.dismiss()
+                    self.sampleTableView.isHidden = false
+
                 }
                 
                 
@@ -528,8 +565,8 @@ class UsersListViewController: UIViewController,UITableViewDataSource,UITableVie
             print("Error From Getting Users List API Call: \(error.localizedDescription)")
             
             showAlert(title: "Faveo Heldesk", message: error.localizedDescription, vc: self)
-            SVProgressHUD.dismiss()
-            
+            self.sampleTableView.isHidden = false
+
         }
         
 

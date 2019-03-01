@@ -8,10 +8,10 @@
 
 import UIKit
 import RMessage
-import SVProgressHUD
 
 class SideMenuBarVC: UITableViewController,RMControllerDelegate {
-
+    @IBOutlet weak var backGroundImage: UIImageView!
+    
     @IBOutlet var tableViewOutlet: UITableView!
     
     
@@ -56,12 +56,12 @@ class SideMenuBarVC: UITableViewController,RMControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        backGroundImage.loadGif(name: "background1")
         //RMessage
         rControl.presentationViewController = self
         rControl.delegate = self
         
         // to set black background color mask for Progress view
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
         
         // Add Refresh Control to Table View
         if #available(iOS 10.0, *) {
@@ -389,7 +389,6 @@ class SideMenuBarVC: UITableViewController,RMControllerDelegate {
             else if data["error"].exists(){
                 
                 showAlert(title: "OOPs...", message: "Too Many Attempts. Please try after sometime.", vc: self)
-                SVProgressHUD.dismiss()
             }
             else{
                 

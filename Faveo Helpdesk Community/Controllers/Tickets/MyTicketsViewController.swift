@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SVProgressHUD
 import SwiftHEXColors
 import RMessage
 
@@ -16,6 +15,17 @@ class MyTicketsViewController: UIViewController,UITableViewDataSource,UITableVie
     var selectedPath:IndexPath?
     var selectedTicketId:String?
     var selectedIdCount:Int?
+    
+    @IBOutlet weak var skeltonView: UIView!
+    
+    @IBOutlet weak var skeltonImage1: UIImageView!
+    @IBOutlet weak var skeltonImage2: UIImageView!
+    
+    @IBOutlet weak var skeltonImage3: UIImageView!
+    
+    @IBOutlet weak var skeltonImage4: UIImageView!
+    
+    @IBOutlet weak var skeltonImage5: UIImageView!
     
     //RMessage
     private let rControl = RMController()
@@ -43,10 +53,14 @@ class MyTicketsViewController: UIViewController,UITableViewDataSource,UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        sampleTableView.isHidden = true
         // to set black background color mask for Progress view
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
-        SVProgressHUD.dismiss()
-        
+       
+        skeltonImage1.loadGif(name: "skeltonGif")
+        skeltonImage2.loadGif(name: "skeltonGif")
+         skeltonImage3.loadGif(name: "skeltonGif")
+        skeltonImage4.loadGif(name: "skeltonGif")
+        skeltonImage5.loadGif(name: "skeltonGif")
         //RMessage
         rControl.presentationViewController = self
         rControl.delegate = self
@@ -78,22 +92,22 @@ class MyTicketsViewController: UIViewController,UITableViewDataSource,UITableVie
             
             userDefaults.set("", forKey: "userRole")
             showLogoutAlert(title: "Access Denied", message: "Your role has beed changed to user. Contact to your Admin and try to login again.", vc: self)
-            SVProgressHUD.dismiss()
+               self.sampleTableView.isHidden = false
+            
         }
         else if valueFromRefreshTokenValue == "Method not allowed" || valueFromRefreshTokenValue == "method not allowed"{
             
             userDefaults.set("", forKey: "valueFromRefreshToken")
             showLogoutAlert(title: "Access Denied", message: "Your HELPDESK URL were changed, contact to Admin and please log back in.", vc: self)
-            SVProgressHUD.dismiss()
+            self.sampleTableView.isHidden = false
         }
         else if valueFromRefreshTokenValue == "invalid_credentials" || valueFromRefreshTokenValue == "Invalid credential"{
             
             userDefaults.set("", forKey: "valueFromRefreshToken")
             showLogoutAlert(title: "Access Denied", message: "Your Login credentials were changed or Your Account is Deactivated, contact to Admin and please log back in.", vc: self)
-            SVProgressHUD.dismiss()
+            self.sampleTableView.isHidden = false
         }
         else{
-            SVProgressHUD.show(withStatus: "Getting Tickets")
             // call get ticket api
             getTickets()
         
@@ -191,7 +205,8 @@ class MyTicketsViewController: UIViewController,UITableViewDataSource,UITableVie
                 DispatchQueue.main.async {
                     self.sampleTableView.reloadData()
                     self.refreshControl.endRefreshing()
-                    SVProgressHUD.dismiss()
+                    self.sampleTableView.isHidden = false
+
                 }
                 
             } // End of - else of if msg
@@ -204,7 +219,7 @@ class MyTicketsViewController: UIViewController,UITableViewDataSource,UITableVie
             print("Error From My Tickets List API Call: \(error.localizedDescription)")
             
             showAlert(title: "Faveo Heldesk", message: error.localizedDescription, vc: self)
-            SVProgressHUD.dismiss()
+            self.sampleTableView.isHidden = false
 
         }
         
@@ -238,14 +253,15 @@ class MyTicketsViewController: UIViewController,UITableViewDataSource,UITableVie
     //Tells the data source to return the number of rows in a given section of a table view.
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if totalDataArray.count == 0{
+        if totalDataArray.count < 1{
             
-            let noDataLabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-            noDataLabel.text = NSLocalizedString("No Records..!!!", comment: "")
-            noDataLabel.textColor = UIColor.black
-            noDataLabel.textAlignment = .center
-            tableView.backgroundView = noDataLabel
-            tableView.separatorStyle = .none
+            let emptyDataImage = UIImage(named: "AppIcon")
+            let emptyDataImageView = UIImageView(image: emptyDataImage)
+            
+            emptyDataImageView.loadGif(name: "Nodata")
+            emptyDataImageView.frame = CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height)
+            tableView.backgroundView = emptyDataImageView
+            
             
         }else{
             
@@ -263,6 +279,19 @@ class MyTicketsViewController: UIViewController,UITableViewDataSource,UITableVie
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
+//        cell.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+//        UIView.animate(withDuration: 0.4) {
+//            cell.transform = CGAffineTransform.identity
+//        }
+//        
+        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 10, 0)
+        cell.layer.transform = rotationTransform
+        
+        UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveEaseOut, animations: {
+            cell.layer.transform = CATransform3DIdentity
+            
+        })
+
         cell.selectionStyle = .none
         
         if indexPath.row == totalDataArray.count - 1 {
@@ -444,7 +473,8 @@ class MyTicketsViewController: UIViewController,UITableViewDataSource,UITableVie
                 DispatchQueue.main.async {
                     self.sampleTableView.reloadData()
                     self.refreshControl.endRefreshing()
-                    SVProgressHUD.dismiss()
+                    self.sampleTableView.isHidden = false
+
                 }
                 
             } // End of - else of if msg

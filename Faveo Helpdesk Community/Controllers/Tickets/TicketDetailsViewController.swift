@@ -8,10 +8,12 @@
 
 import UIKit
 import JJFloatingActionButton
-import SVProgressHUD
 
 class TicketDetailsViewController: UIViewController {
 
+   
+    
+    
     
     @IBOutlet weak var ticketNumber: UILabel!
     @IBOutlet weak var clientName: UILabel!
@@ -35,11 +37,7 @@ class TicketDetailsViewController: UIViewController {
         
         self.title = "Details"
 
-        
-        // to set black background color mask for Progress view
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
-        SVProgressHUD.dismiss()
-        
+      
         let editImage    = UIImage(named: "pencileEdit")!
         let editTicketButton   = UIBarButtonItem(image: editImage,  style: .plain, target: self, action: #selector(self.editTicketButtonClicked) )
         

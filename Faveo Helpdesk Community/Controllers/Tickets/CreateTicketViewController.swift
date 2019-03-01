@@ -14,7 +14,6 @@ import RMessage
 
 class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMControllerDelegate,UITextViewDelegate {
 
-    
     // RMessage
      private let rControl = RMController()
     
@@ -42,6 +41,7 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
     
     @IBOutlet weak var mobileNumber: UITextField!
     
+    
     var selectedPriorityId:Int?
     var selectedHelpTopicId:Int?
     var selectedSLAId:Int?
@@ -51,6 +51,8 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+       
        // Do any additional setup after loading the view.
         setUpSideMenuBar()
         
@@ -65,10 +67,10 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
         self.sampleTableView.tableFooterView = UIView()
         
         // to set black background color mask for Progress view
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
         
         
     }
+   
     
     //setting up side-menu bar
     func setUpSideMenuBar(){
@@ -85,9 +87,11 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
         }
         
     }// End of setUpSideMenuBar method
+
     
-    @IBAction func priorityTextFieldClicked(_ sender: Any) {
-        
+    
+    
+    @IBAction func PriorityTextFieldBtnClicked(_ sender: UIButton) {
         ActionSheetStringPicker.show(withTitle: "Select Priority", rows: GlobalVariables.sharedManager.priorityNamesArray, initialSelection: 1, doneBlock: {
             picker, value, index in
             
@@ -102,6 +106,49 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
     }
     
     
+    @IBAction func helpTopicTextFieldBtnClicked(_ sender: UIButton) {
+        ActionSheetStringPicker.show(withTitle: "Select HelpTopic", rows: GlobalVariables.sharedManager.helpTopicNamesArray, initialSelection: 1, doneBlock: {
+            picker, value, index in
+            
+            //  print("Values is : \(value)")
+            //  print("index is : \(index ?? "")")
+            
+            print("Selected HelpTopic is : \(index ?? "No Value")")
+            self.helptopicTextField.text = index as? String
+            
+            return
+        }, cancel: { ActionStringCancelBlock in return }, origin: sender)
+    }
+    
+    @IBAction func slatextFieldBtnClicked(_ sender: UIButton) {
+        ActionSheetStringPicker.show(withTitle: "Select SLA", rows: GlobalVariables.sharedManager.slaNameArray, initialSelection: 1, doneBlock: {
+            picker, value, index in
+            
+            //  print("Values is : \(value)")
+            //  print("index is : \(index ?? "")")
+            
+            print("Selected SLA is : \(index ?? "No Value")")
+            self.slaTextField.text = index as? String
+            
+            return
+        }, cancel: { ActionStringCancelBlock in return }, origin: sender)
+    }
+   
+    @IBAction func priorityTextFieldClicked(_ sender: Any) {
+        
+        ActionSheetStringPicker.show(withTitle: "Select Priority", rows: GlobalVariables.sharedManager.priorityNamesArray, initialSelection: 1, doneBlock: {
+            picker, value, index in
+            
+            //  print("Values is : \(value)")
+            //  print("index is : \(index ?? "")")
+            
+            print("Selected Priority is : \(index ?? "No Value")")
+            self.priorityTextField.text = index as? String
+            
+            return
+        }, cancel: { ActionStringCancelBlock in return }, origin: sender)
+    }
+
     @IBAction func helptopicTextFieldClicked(_ sender: Any) {
         
         ActionSheetStringPicker.show(withTitle: "Select HelpTopic", rows: GlobalVariables.sharedManager.helpTopicNamesArray, initialSelection: 1, doneBlock: {
@@ -139,13 +186,10 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
     @IBAction func SubmitButtonClicked(_ sender: Any) {
 
        
-        SVProgressHUD.show(withStatus: "Please wait...")
         
-        print("clicked")
         
         if emailTextField.text == "" || firstNameTextField.text == "" || subjectTextView.text == "" && messageTextView.text == "" || priorityTextField.text == "" || helptopicTextField.text == "" || slaTextField.text == "" || mobileNumber.text == ""{
-            
-            SVProgressHUD.dismiss()
+
             //show alert message - Please fill mandatory fields.
              print(" Enter all required fields")
         }
@@ -171,26 +215,17 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
                print("name should be more 2 or more")
         }
         else{
-            
             //call creat ticket api
              createTicketAPICall()
         }
-        
-        
     }
-    
-    
     func createTicketAPICall() {
-        
         //Priority Value
         let priorityNamesArray2 = GlobalVariables.sharedManager.priorityNamesArray
-        
         selectedPriorityId = NSNumber(value: 1 + priorityNamesArray2!.index(of: priorityTextField.text!)!) as? Int
         //  print("Selected Priority : %@ Id is : \(selectedPriorityId!)",priorityTextField.text!)
-        
         //HelpTopic Value
         let helpTopicArray2 = GlobalVariables.sharedManager.helpTopicNamesArray
-        
         selectedHelpTopicId = NSNumber(value: 1 + helpTopicArray2!.index(of: helptopicTextField.text!)!) as? Int
         //  print("Selected HelpTopic : %@ Id is : \(selectedHelpTopicId!)",helpTopicTextField.text!)
         
@@ -283,8 +318,7 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
                                                 SVProgressHUD.dismiss()
                                                 
                                             }
-                                            
-                                            
+
                                         }
                                         
         }) { (error) in
@@ -295,31 +329,22 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
             showAlert(title: "Faveo Heldesk", message: error.localizedDescription, vc: self)
             SVProgressHUD.dismiss()
         }
-        
-        
     }
-    
-    
-    
     //Asks the delegate if editing should begin in the specified text field.
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        
         if textField == priorityTextField || textField == helptopicTextField || textField == slaTextField{
             return false; //do not show keyboard nor cursor
         }
-        
         return true
     }
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
         
         if textField == firstNameTextField || textField == lastNameTextField{
         
            let aSet = NSCharacterSet(charactersIn:"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-_").inverted
            let compSepByCharInSet = string.components(separatedBy: aSet)
            let numberFiltered = compSepByCharInSet.joined(separator: "")
-           
+
             return string == numberFiltered
         }
         else if textField == emailTextField{
@@ -355,30 +380,17 @@ class CreateTicketViewController: UITableViewController,UITextFieldDelegate,RMCo
                     return false
                 }
             }
-            
             if (textView.text as NSString).replacingCharacters(in: range, with: text).count < textView.text.count {
-                
                 return true
             }
-            
             if (textView.text as NSString).replacingCharacters(in: range, with: text).count > 200 {
                 return false
             }
-            
             let set = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 .*@#$%(),<>;:[]{}=+")
-            
-            
             if Int((text as NSString).rangeOfCharacter(from: set).location) == NSNotFound {
                 return false
             }
         }
-        
-        
         return true
     }
-    
-    
-    
-
-  
 }

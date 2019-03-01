@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SVProgressHUD
 import SwiftHEXColors
 import RMessage
 
@@ -87,13 +86,33 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
     @IBOutlet weak var sideMenuButton: UIBarButtonItem!
     @IBOutlet weak var tableViewOutlet: UITableView!
     
+    @IBOutlet weak var skeltonView: UIView!
+    
+    @IBOutlet weak var skeltonImage: UIImageView!
+    
+    @IBOutlet weak var skeltonImage2: UIImageView!
+    
+    @IBOutlet weak var skeltonImage3: UIImageView!
+    
+    @IBOutlet weak var skeltonImage4: UIImageView!
+    
+    @IBOutlet weak var skeltonImage5: UIImageView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        skeltonImage.loadGif(name: "skeltonGif")
+        skeltonImage2.loadGif(name: "skeltonGif")
+         skeltonImage3.loadGif(name: "skeltonGif")
+        skeltonImage4.loadGif(name: "skeltonGif")
+        skeltonImage5.loadGif(name: "skeltonGif")
 
+
+        tableViewOutlet.isHidden = true
+    
         // to set black background color mask for Progress view
-         SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
-         SVProgressHUD.dismiss()
+        
         
         //RMessage
         rControl.presentationViewController = self
@@ -125,23 +144,24 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
             
             userDefaults.set("", forKey: "userRole")
             showLogoutAlert(title: "Access Denied", message: "Your role has beed changed to user. Contact to your Admin and try to login again.", vc: self)
-            SVProgressHUD.dismiss()
+            tableViewOutlet.isHidden = false
         }
         else if valueFromRefreshTokenValue == "Method not allowed" || valueFromRefreshTokenValue == "method not allowed"{
             
             userDefaults.set("", forKey: "valueFromRefreshToken")
             showLogoutAlert(title: "Access Denied", message: "Your HELPDESK URL were changed, contact to Admin and please log back in.", vc: self)
-            SVProgressHUD.dismiss()
+            tableViewOutlet.isHidden = false
+
         }
         else if valueFromRefreshTokenValue == "invalid_credentials" || valueFromRefreshTokenValue == "Invalid credential"{
             
             userDefaults.set("", forKey: "valueFromRefreshToken")
             showLogoutAlert(title: "Access Denied", message: "Your Login credentials were changed or Your Account is Deactivated, contact to Admin and please log back in.", vc: self)
-            SVProgressHUD.dismiss()
+            tableViewOutlet.isHidden = false
+
         }
         else{
-               SVProgressHUD.show(withStatus: "Getting Tickets")
-            // call get ticket api
+            
                getTickets()
             // call get-dependency method api call
               getDependeciesAPICall()
@@ -178,6 +198,8 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
         let tokenValue = userDefaults.string(forKey:"token")
        // print("token=>",tokenValue!)
         
+        
+        
         requestGETURL(getInboxTicketsURL!, params: ["token":tokenValue as AnyObject ],  success: { (data) in
                                                 
             
@@ -185,8 +207,8 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
                                                 
                 let msg = data["message"].stringValue
                 print("Message is: ",msg)
-                                                
-                if msg == "Token has expired"{
+            
+            if msg == "Token has expired"{
                     
                   tokenRefreshMethod()
                   self.getTickets()
@@ -241,8 +263,10 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
                     
                     DispatchQueue.main.async {
                         self.tableViewOutlet.reloadData()
+                    
                         self.refreshControl.endRefreshing()
-                        SVProgressHUD.dismiss()
+                        self.tableViewOutlet.isHidden = false
+
                     }
                     
                 } // End of - else of if msg
@@ -255,7 +279,8 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
             print("Error From Inbox Tickets List API Call: \(error.localizedDescription)")
             
             showAlert(title: "Faveo Heldesk", message: error.localizedDescription, vc: self)
-            SVProgressHUD.dismiss()
+            self.tableViewOutlet.isHidden = false
+
 
         }
  
@@ -289,14 +314,15 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
     //Tells the data source to return the number of rows in a given section of a table view.
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if totalDataArray.count == 0{
+        if totalDataArray.count < 1{
             
-            let noDataLabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-            noDataLabel.text = NSLocalizedString("No Records..!!!", comment: "")
-            noDataLabel.textColor = UIColor.black
-            noDataLabel.textAlignment = .center
-            tableView.backgroundView = noDataLabel
-            tableView.separatorStyle = .none
+            let emptyDataImage = UIImage(named: "AppIcon")
+            let emptyDataImageView = UIImageView(image: emptyDataImage)
+            
+            emptyDataImageView.loadGif(name: "Nodata")
+            emptyDataImageView.frame = CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height)
+            tableView.backgroundView = emptyDataImageView
+            
             
         }else{
             
@@ -313,7 +339,39 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//
+//        cell.alpha = 0.5
+//        let transform = CATransform3DTranslate(CATransform3DIdentity, -250, 20, 0)
+//        cell.layer.transform = transform
+//
+//        UIView.animate(withDuration: 1.0) {
+//            cell.alpha = 1.0
+//
+////        }
+        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 10, 0)
+        cell.layer.transform = rotationTransform
+
+        UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveEaseOut, animations: {
+            cell.layer.transform = CATransform3DIdentity
+
+        })
+//        UIView.animate(withDuration: 0.5) {
+//            cell.layer.transform = CATransform3DIdentity
+//        }
         
+        //        cell.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+//        UIView.animate(withDuration: 0.4) {
+//            cell.transform = CGAffineTransform.identity
+//        }
+//
+//        
+//        let rotationAngleInRadians = 90.0 * CGFloat(.pi/180.0)
+//        //  let rotationTransform = CATransform3DMakeRotation(rotationAngleInRadians, -500, 100, 0)
+//        let rotationTransform = CATransform3DMakeRotation(rotationAngleInRadians, 0, 0, 1)
+//        cell.layer.transform = rotationTransform
+//        UIView.animate(withDuration: 0.4, animations: {cell.layer.transform = CATransform3DIdentity})
+
+
         cell.selectionStyle = .none
         
         print("Array count is: ",totalDataArray.count)
@@ -348,21 +406,17 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
     
     //Get more tickets
     func getNextPageTickets(nextPageUrl:String){
-        
         let tokenValue = userDefaults.string(forKey:"token")
         print("token=>",tokenValue!)
         
         var nextURLString = nextPageUrl
         nextURLString.append("&token=")
         nextURLString.append(tokenValue!)
-        
         print("Next Page URL is: \(nextURLString)")
         
         requestGETURL(nextURLString, params: nil,  success: { (data) in
           
           //  print(URLRequest.self)
-           
-
           //  print("JSON is: ",data)
             
             let msg = data["message"].stringValue
@@ -425,7 +479,8 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
                 DispatchQueue.main.async {
                     self.tableViewOutlet.reloadData()
                     self.refreshControl.endRefreshing()
-                    SVProgressHUD.dismiss()
+                    self.tableViewOutlet.isHidden = false
+
                 }
                 
             } // End of - else of if msg
@@ -485,7 +540,6 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
                 
                 cell.overDue.isHidden = false
                 cell.dueToday.isHidden = true
-                
             }else{
                 cell.overDue.isHidden = true
                 cell.dueToday.isHidden = false
@@ -540,7 +594,7 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
             else if data["error"].exists(){
               
                 showAlert(title: "OOPs...", message: "Too Many Attempts. Please try after sometime.", vc: self)
-                SVProgressHUD.dismiss()
+                self.tableViewOutlet.isHidden = false
             }
             else{
                 
@@ -761,7 +815,5 @@ class InboxViewController: UIViewController,UITableViewDataSource,UITableViewDel
     }
     
 
-
 }
-
 

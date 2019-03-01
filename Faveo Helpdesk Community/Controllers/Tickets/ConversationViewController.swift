@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SVProgressHUD
 
 class ConversationData{
     
@@ -34,6 +33,24 @@ class ConversationData{
 
 class ConversationViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
+    @IBOutlet weak var skeltonView: UIView!
+    
+    @IBOutlet weak var skeltonImage1: UIImageView!
+    
+    @IBOutlet weak var skeltonImage2: UIImageView!
+    
+    @IBOutlet weak var skeltonImage3: UIImageView!
+    
+    @IBOutlet weak var skeltonImage4: UIImageView!
+    
+    @IBOutlet weak var skeltonImage5: UIImageView!
+    
+    
+    
+    
+    
+    
+    
     var dataArray = [ConversationData]()
     var totalDataArray = [ConversationData]()
     var totalDataArray2 = [ConversationData]()
@@ -48,10 +65,15 @@ class ConversationViewController: UIViewController,UITableViewDataSource,UITable
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        sampleTableView.isHidden = true
+        skeltonImage1.loadGif(name: "skeltonGif")
+        skeltonImage2.loadGif(name: "skeltonGif")
+        skeltonImage3.loadGif(name: "skeltonGif")
+        skeltonImage4.loadGif(name: "skeltonGif")
+        skeltonImage5.loadGif(name: "skeltonGif")
+        
         // Do any additional setup after loading the view.
         
-        // to set black background color mask for Progress view
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.methodOfReceivedNotification(notification:)), name: Notification.Name("reload"), object: nil)
         
@@ -77,19 +99,19 @@ class ConversationViewController: UIViewController,UITableViewDataSource,UITable
             
             userDefaults.set("", forKey: "userRole")
             showLogoutAlert(title: "Access Denied", message: "Your role has beed changed to user. Contact to your Admin and try to login again.", vc: self)
-            SVProgressHUD.dismiss()
+            self.sampleTableView.isHidden = false
         }
         else if valueFromRefreshTokenValue == "Method not allowed" || valueFromRefreshTokenValue == "method not allowed"{
             
             userDefaults.set("", forKey: "valueFromRefreshToken")
             showLogoutAlert(title: "Access Denied", message: "Your HELPDESK URL were changed, contact to Admin and please log back in.", vc: self)
-            SVProgressHUD.dismiss()
+            self.sampleTableView.isHidden = false
         }
         else if valueFromRefreshTokenValue == "invalid_credentials" || valueFromRefreshTokenValue == "Invalid credential"{
             
             userDefaults.set("", forKey: "valueFromRefreshToken")
             showLogoutAlert(title: "Access Denied", message: "Your Login credentials were changed or Your Account is Deactivated, contact to Admin and please log back in.", vc: self)
-            SVProgressHUD.dismiss()
+            self.sampleTableView.isHidden = false
         }
         else{
               self.getTicketThread()
@@ -103,7 +125,6 @@ class ConversationViewController: UIViewController,UITableViewDataSource,UITable
         
         self.totalDataArray.removeAll()
         
-        SVProgressHUD.show(withStatus: "Getting Conversations")
         
         var ticketThreadURL = userDefaults.string(forKey: "baseURL")
         ticketThreadURL?.append("api/v1/helpdesk/ticket-thread")
@@ -175,13 +196,13 @@ class ConversationViewController: UIViewController,UITableViewDataSource,UITable
                     
                 } // End - for dataList
                                                     
-                  SVProgressHUD.dismiss()
-                
+                self.sampleTableView.isHidden = false
+
                   DispatchQueue.main.async {
                    
                      self.sampleTableView.reloadData()
                      self.refreshControl.endRefreshing()
-                     SVProgressHUD.dismiss()
+                    self.sampleTableView.isHidden = false
                   }
                                                     
             }//end else condition of - if msg == "Token expired"{
@@ -194,8 +215,8 @@ class ConversationViewController: UIViewController,UITableViewDataSource,UITable
             print("Error From Getting Conversations API Call: \(error.localizedDescription)")
             
             showAlert(title: "Faveo Heldesk", message: error.localizedDescription, vc: self)
-            SVProgressHUD.dismiss()
-            
+            self.sampleTableView.isHidden = false
+
         }
         
     }
@@ -226,12 +247,19 @@ class ConversationViewController: UIViewController,UITableViewDataSource,UITable
     
     //Tells the data source to return the number of rows in a given section of a table view.
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
+       
         return totalDataArray.count
     
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 10, 0)
+//        cell.layer.transform = rotationTransform
+//
+//        UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveEaseOut, animations: {
+//            cell.layer.transform = CATransform3DIdentity
+//
+//        })
         
         cell.selectionStyle = .none
         
@@ -270,8 +298,8 @@ class ConversationViewController: UIViewController,UITableViewDataSource,UITable
         if firstName.isEmpty && lastName.isEmpty{
             
             if userName.isEmpty{
-                
-               cell.nameLabel.text = "System"
+
+                cell.nameLabel.text = "System"
                 
             }
             else{
@@ -351,6 +379,7 @@ class ConversationViewController: UIViewController,UITableViewDataSource,UITable
         
         //user taps expnmade view
         
+        
         if selectedIndex == indexPath.row {
             
             selectedIndex = -1
@@ -400,7 +429,8 @@ class ConversationViewController: UIViewController,UITableViewDataSource,UITable
         if selectedIndex == indexPath.row {
             return 250
         } else {
-            return 85
+            return 115
+            
         }
     }
        

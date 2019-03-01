@@ -10,6 +10,7 @@ import Foundation
 
 class GlobalVariables {
     
+    var  UrlText:String?
     // These are the properties you can store in your singleton
     private var myName: String = "bob"
     
